@@ -67298,6 +67298,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Mounts"
+            ],
+            "Misc": [
+                "Drops"
             ]
         },
         internalName: "WitchBroom",
@@ -72565,6 +72568,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Mounts"
+            ],
+            "Misc": [
+                "Drops"
             ]
         },
         internalName: "SpookyWoodMountItem",
@@ -72579,6 +72585,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Mounts"
+            ],
+            "Misc": [
+                "Drops"
             ]
         },
         internalName: "SantankMountItem",
@@ -72897,6 +72906,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Pets"
+            ],
+            "Misc": [
+                "Drops"
             ]
         },
         internalName: "EverscreamPetItem",
@@ -72911,6 +72923,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Pets"
+            ],
+            "Misc": [
+                "Drops"
             ]
         },
         internalName: "IceQueenPetItem",
