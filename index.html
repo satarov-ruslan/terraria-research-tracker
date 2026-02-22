@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terraria Journey Research Tracker (1.4.5)</title>
+
+    <meta name="description" content="Terraia Journey research tracker and checklist. Works with 1.4.5">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button class="reset-button" id="resetButton">Reset</button>
+            <div id="resetModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="reset-modal-wrapper">
+                        <div>Are you sure you want to reset?</div>
+                        <div class="reset-modal-button-wrapper">
+                            <button class="reset-button" id="confirmResetButton">Yes</button>
+                            <button id="cancelResetButton">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <input type="file" id="fileInput" accept=".plr,.plr.bak" hidden>
+                <button id="loadButton">Load player file</button>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="dropdown" id="viewStyleDropdown">
+                <button class="dropdown-toggle" id="viewStyleDropdownToggle">
+                    View style: <span id="viewStyleDropdownToggleLabel"></span>
+                </button>
+
+                <div class="dropdown-menu" id="viewStyleDropdownMenu">
+                    <div class="dropdown-select" data-value="grid">Grid</div>
+                    <div class="dropdown-select" data-value="list">List</div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="pageSizeDropdown">
+                <button class="dropdown-toggle" id="pageSizeDropdownToggle">
+                    Page size: <span id="pageSizeDropdownToggleLabel"></span>
+                </button>
+
+                <div class="dropdown-menu" id="pageSizeDropdownMenu">
+                    <div class="dropdown-select" data-value="10">10</div>
+                    <div class="dropdown-select" data-value="25">25</div>
+                    <div class="dropdown-select" data-value="50">50</div>
+                    <div class="dropdown-select" data-value="100">100</div>
+                    <div class="dropdown-select" data-value="200">200</div>
+                    <div class="dropdown-select" data-value="999999">All</div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="sortByDropdown">
+                <button class="dropdown-toggle" id="sortByDropdownToggle">
+                    Sort by: <span id="sortByDropdownToggleLabel"></span>
+                </button>
+
+                <div class="dropdown-menu" id="sortByDropdownMenu">
+                    <div class="dropdown-select" data-value="ID">ID</div>
+                    <div class="dropdown-select" data-value="name">Name</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="search-input-wrapper">
+                <input type="text" id="searchInput" placeholder="Search by name or ID">
+            </div>
+
+            <div class="dropdown" id="showItemsDropdown">
+                <button class="dropdown-toggle" id="showItemsDropdownToggle">Show items</button>
+                <div class="dropdown-menu" id="showItemsDropdownMenu">
+                    <label class="dropdown-select">
+                        <input type="checkbox" value="Fully Researched" id="fullyResearchedCheckbox">
+                         Fully researched
+                    </label>
+                    <label class="dropdown-select">
+                        <input type="checkbox" value="Partially Researched" id="partiallyResearchedCheckbox" checked>
+                        Partially researched
+                    </label>
+                    <label class="dropdown-select">
+                        <input type="checkbox" value="Not Researched" id="notResearchedCheckbox" checked>
+                         Not researched
+                    </label>
+                    <label class="dropdown-select">
+                        <input type="checkbox" value="Unobtainable" id="unobtainableCheckbox">
+                         Unobtainable
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <button id="openTagsButton">Filter by tags</button>
+                <div id="tagModal" class="modal hidden">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div>Filter by tags</div>
+                            <button id="closeTagsButton">✕</button>
+                        </div>
+                        <div id="tagContainer" class="tag-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Player: <span class="color-grey" id="playerNameLabel"></span></h2>
+
+        <div id="summary">
+            <div id="summaryText" class="summary-text">
+                <div class="color-green">
+                    Total: <span id="totalItemsLabel">0</span>
+                </div>
+                <div class="color-yellow">
+                    Researched: <span id="researchedItemsLabel">0</span>
+                </div>
+                <div class="color-red">
+                    Missing: <span id="missingItemsLabel">0</span>
+                </div>
+                <div id="unobtainableItemsSummarySection" class="summary-text color-grey">
+                    Unobtainable: <span id="unobtainableItemsLabel">0</span>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-percent" id="progressPercentLabel">0%</div>
+        </div>
+
+        <ul id="itemSection" class="item-list grid"></ul>
+
+        <div id="paginationSection" class="pagination">
+            <button id="paginationPreviousPageButton">◄</button>
+            <span id="paginationPageNumberLabel"></span>
+            <button id="paginationNextPageButton">►</button>
+        </div>
+    </div>
+
+    <script src="src/local_storage_manager.js"></script>
+    <script src="src/reader.js"></script>
+    <script src="src/deserializer.js"></script>
+    <script src="src/items.js"></script>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
