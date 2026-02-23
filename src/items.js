@@ -153,7 +153,6 @@ const allItems = [
         itemUrl: "Iron_Axe",
         id: 10,
         researched: 0,
-        researched: 0,
         imageUrl: "Iron_Axe.png"
     },
     {
@@ -171,7 +170,6 @@ const allItems = [
         internalName: "IronOre",
         itemUrl: "Iron_Ore",
         id: 11,
-        researched: 0,
         researched: 0,
         imageUrl: "Iron_Ore.png"
     },
@@ -191,7 +189,6 @@ const allItems = [
         itemUrl: "Copper_Ore",
         id: 12,
         researched: 0,
-        researched: 0,
         imageUrl: "Copper_Ore.png"
     },
     {
@@ -209,7 +206,6 @@ const allItems = [
         internalName: "GoldOre",
         itemUrl: "Gold_Ore",
         id: 13,
-        researched: 0,
         researched: 0,
         imageUrl: "Gold_Ore.png"
     },
@@ -229,7 +225,6 @@ const allItems = [
         itemUrl: "Silver_Ore",
         id: 14,
         researched: 0,
-        researched: 0,
         imageUrl: "Silver_Ore.png"
     },
     {
@@ -246,7 +241,6 @@ const allItems = [
         internalName: "CopperWatch",
         itemUrl: "Copper_Watch",
         id: 15,
-        researched: 0,
         researched: 0,
         imageUrl: "Copper_Watch.png"
     },
@@ -265,7 +259,6 @@ const allItems = [
         itemUrl: "Silver_Watch",
         id: 16,
         researched: 0,
-        researched: 0,
         imageUrl: "Silver_Watch.png"
     },
     {
@@ -282,7 +275,6 @@ const allItems = [
         internalName: "GoldWatch",
         itemUrl: "Gold_Watch",
         id: 17,
-        researched: 0,
         researched: 0,
         imageUrl: "Gold_Watch.png"
     },
@@ -302,7 +294,6 @@ const allItems = [
         itemUrl: "Depth_Meter",
         id: 18,
         researched: 0,
-        researched: 0,
         imageUrl: "Depth_Meter.png"
     },
     {
@@ -319,7 +310,6 @@ const allItems = [
         internalName: "GoldBar",
         itemUrl: "Gold_Bar",
         id: 19,
-        researched: 0,
         researched: 0,
         imageUrl: "Gold_Bar.png"
     },
@@ -338,7 +328,6 @@ const allItems = [
         itemUrl: "Copper_Bar",
         id: 20,
         researched: 0,
-        researched: 0,
         imageUrl: "Copper_Bar.png"
     },
     {
@@ -356,7 +345,6 @@ const allItems = [
         itemUrl: "Silver_Bar",
         id: 21,
         researched: 0,
-        researched: 0,
         imageUrl: "Silver_Bar.png"
     },
     {
@@ -373,7 +361,6 @@ const allItems = [
         internalName: "IronBar",
         itemUrl: "Iron_Bar",
         id: 22,
-        researched: 0,
         researched: 0,
         imageUrl: "Iron_Bar.png"
     },
@@ -393,7 +380,6 @@ const allItems = [
         itemUrl: "Gel",
         id: 23,
         researched: 0,
-        researched: 0,
         imageUrl: "Gel.png"
     },
     {
@@ -408,7 +394,6 @@ const allItems = [
         itemUrl: "Wooden_Sword",
         id: 24,
         researched: 0,
-        researched: 0,
         imageUrl: "Wooden_Sword.png"
     },
     {
@@ -422,7 +407,6 @@ const allItems = [
         internalName: "WoodenDoor",
         itemUrl: "Wooden_Door",
         id: 25,
-        researched: 0,
         researched: 0,
         imageUrl: "Wooden_Door.png"
     },
@@ -440,7 +424,6 @@ const allItems = [
         internalName: "StoneWall",
         itemUrl: "Stone_Wall",
         id: 26,
-        researched: 0,
         researched: 0,
         imageUrl: "Stone_Wall.png"
     },
