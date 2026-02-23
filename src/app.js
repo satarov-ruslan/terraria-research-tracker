@@ -602,7 +602,15 @@ function createListItemElement(item) {
 
     const itemResearched = div();
     itemResearched.classList.add("item-meta");
-    itemResearched.innerText = `Researched:\u00A0${item.researched}`;
+    
+    let researchedNum = item.researched;
+    if (item.fullyResearchedTemp && !item.fullyResearched) {
+        researchedNum = item.neededForResearch + "*";
+    } else if (item.notResearchedTemp) {
+        researchedNum = "0*";
+    }
+
+    itemResearched.innerText = `Researched:\u00A0${researchedNum}`;
     itemDescriptionWrapper.append(itemResearched);
 
     const itemNeededForResearch = div();
@@ -662,7 +670,15 @@ function createGridItemElement(item) {
     gridItemContent.append(idElement);
 
     const researchedElement = itemSlotMeta.cloneNode();
-    researchedElement.innerText = `Researched:\u00A0${item.researched}`;
+    
+    let researchedNum = item.researched;
+    if (item.fullyResearchedTemp && !item.fullyResearched) {
+        researchedNum = item.neededForResearch + "*";
+    } else if (item.notResearchedTemp) {
+        researchedNum = "0*";
+    }
+
+    researchedElement.innerText = `Researched:\u00A0${researchedNum}`;
     gridItemContent.append(researchedElement);
 
     const neededElement = itemSlotMeta.cloneNode();
@@ -696,8 +712,11 @@ function createResearchCheckbox(item) {
     const researchCheckbox = document.createElement("input");
     researchCheckbox.type = "checkbox";
     researchCheckbox.classList.add("research-checkbox");
+
     if (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp)) {
         researchCheckbox.checked = true;
+    } else if (item.researched > 0 && item.researched < item.neededForResearch) {
+        researchCheckbox.indeterminate = true;
     }
 
     const researchImage = document.createElement("img");
@@ -708,16 +727,19 @@ function createResearchCheckbox(item) {
 
     researchCheckbox.addEventListener("change", (e) => {
         if (e.target.checked) {
+            item.notResearchedTemp = false;
             if (!item.fullyResearched || !item.fullyResearchedTemp) {
                 item.fullyResearchedTemp = true;
             }
-            item.notResearchedTemp = false;
             itemStorageManager.save(items);
         } else {
+            item.fullyResearchedTemp = false;
+            e.target.indeterminate = false;
             if (item.fullyResearched) {
                 item.notResearchedTemp = true;
+            } else if (item.researched > 0 && item.researched < item.neededForResearch) {
+                e.target.indeterminate = true;
             }
-            item.fullyResearchedTemp = false;
             itemStorageManager.save(items);
         }
         renderSummary();
