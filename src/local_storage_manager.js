@@ -16,14 +16,14 @@ class LocalStorageManager {
                 return JSON.parse(data);
             } catch (e) {
                 console.warn("Failed to parse localStorage data:", e);
-                return this.defaultItems;
+                return structuredClone(this.defaultItems);
             }
         }
-        return this.defaultItems;
+        return structuredClone(this.defaultItems);
     }
 
     reset() {
         localStorage.removeItem(this.storageKey);
-        return this.defaultItems;
+        return structuredClone(this.defaultItems);
     }
 }
