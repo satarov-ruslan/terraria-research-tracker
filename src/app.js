@@ -25,6 +25,7 @@ const pageSizeDropdownToggleLabel = document.getElementById("pageSizeDropdownTog
 const pageSizeDropdownMenu = document.getElementById("pageSizeDropdownMenu");
 
 const searchInput = document.getElementById("searchInput");
+const searchResetButton = document.getElementById("searchResetButton");
 
 const sortByDropdown = document.getElementById("sortByDropdown");
 const sortByDropdownToggle = document.getElementById("sortByDropdownToggle");
@@ -154,6 +155,7 @@ confirmResetButton.addEventListener("click", () => {
     searchQuery = "";
     searchInput.value = "";
     currentPage = 1;
+    updateSearchResetVisibility();
 
     showFullyResearched = false;
     fullyResearchedCheckbox.checked = false;
@@ -312,9 +314,22 @@ loadButton.addEventListener("click", () => {
     fileInput.click();
 });
 
+function updateSearchResetVisibility() {
+    searchResetButton.classList.toggle("hidden", searchInput.value.length === 0);
+}
+
 searchInput.addEventListener("input", () => {
     searchQuery = searchInput.value.toLowerCase();
+    updateSearchResetVisibility();
     currentPage = 1;
+    render();
+});
+
+searchResetButton.addEventListener("click", () => {
+    searchInput.value = "";
+    searchQuery = "";
+    currentPage = 1;
+    updateSearchResetVisibility();
     render();
 });
 

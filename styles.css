@@ -474,6 +474,11 @@ h2 {
     padding: 10px;
 }
 
+#closeTagsButton {
+    font-size: 1rem;
+    padding: 3px 10px;
+}
+
 .tag-group {
     margin-bottom: 8px;
 }
@@ -685,6 +690,37 @@ h2 {
 
 .search-input-wrapper {
     display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.search-input-wrapper #searchInput {
+    padding-right: 32px;
+}
+
+.search-reset-icon {
+    position: absolute;
+    right: 6px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    color: #9ad1ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-radius: 4px;
+}
+
+.search-reset-icon:hover {
+    color: #ffe66d;
+}
+
+.search-reset-icon.hidden {
+    display: none !important;
 }
 
 #unobtainableItemsSummarySection {
