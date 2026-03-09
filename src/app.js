@@ -48,11 +48,15 @@ const progressBar = document.getElementById("progressBar");
 const progressPercentLabel = document.getElementById("progressPercentLabel");
 
 const itemSection = document.getElementById("itemSection");
+const itemSectionWrapper = document.getElementById("itemSectionWrapper");
+const categoryView = document.getElementById("categoryView");
 
 const paginationSection = document.getElementById("paginationSection");
 const paginationPreviousPageButton = document.getElementById("paginationPreviousPageButton");
 const paginationPageNumberLabel = document.getElementById("paginationPageNumberLabel");
 const paginationNextPageButton = document.getElementById("paginationNextPageButton");
+
+const scrollToTopButton = document.getElementById("scrollToTopButton");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -78,7 +82,19 @@ let showUnobtainable = false;
 
 let items = itemStorageManager.load();
 
+// If new items added, but the browser cache doesn't have them yet.
+allItems.forEach(itemFromAllItems => {
+    if (!items.find(item => item.internalName == itemFromAllItems.internalName)) {
+        items.push(structuredClone(itemFromAllItems));
+    }
+});
+
+const scrollToTopThreshold = 250;
+
 let selectedTagFilters = {};
+
+/** When in categories view: { categoryOrder, subcategoryOrderByCategory, groups: { [category]: { [subcategory]: item[] } } }. Used for lazy render. */
+let categoryViewData = null;
 
 const itemUrlBase = "https://terraria.wiki.gg/wiki/";
 const imageUrlBase = "https://terraria.wiki.gg/images/";
@@ -88,8 +104,11 @@ playerNameLabel.textContent = viewSettings.playerName;
 
 itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
 itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
+itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
+categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+updateScrollToTopVisibility();
 
-viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle;
+viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle.charAt(0).toUpperCase() + viewSettings.viewStyle.slice(1);
 pageSizeDropdownToggleLabel.innerText = viewSettings.pageSizeLabel;
 sortByDropdownToggleLabel.innerText = viewSettings.sortBy;
 
@@ -122,8 +141,9 @@ confirmResetButton.addEventListener("click", () => {
     resetModal.classList.toggle("hidden", true);
 
     items = itemStorageManager.reset();
-    viewStyle = settingsStorageManager.reset();
+    Object.assign(viewSettings, settingsStorageManager.reset());
     selectedTagFilters = {};
+    openTagsButton.classList.toggle("active", false);
     playerNameLabel.textContent = "no name";
     searchQuery = "";
     searchInput.value = "";
@@ -137,6 +157,13 @@ confirmResetButton.addEventListener("click", () => {
     notResearchedCheckbox.checked = true;
     showUnobtainable = false;
     unobtainableCheckbox.checked = false;
+
+    itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
+    itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
+    itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
+    categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+    updateScrollToTopVisibility();
+    viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle.charAt(0).toUpperCase() + viewSettings.viewStyle.slice(1);
 
     renderTags();
     renderSummary();
@@ -164,6 +191,7 @@ fileInput.addEventListener("change", async () => {
     items = player.researchProgress.items;
 
     selectedTagFilters = {};
+    openTagsButton.classList.toggle("active", false);
     currentPage = 1;
     renderTags();
     renderSummary();
@@ -184,7 +212,10 @@ viewStyleDropdownMenu.querySelectorAll(".dropdown-select").forEach(viewSelect =>
             viewSettings.viewStyle = newViewStyle;
             itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
             itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
-            viewStyleDropdownToggleLabel.innerText = newViewStyle;
+            itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
+            categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+            updateScrollToTopVisibility();
+            viewStyleDropdownToggleLabel.innerText = newViewStyle.charAt(0).toUpperCase() + newViewStyle.slice(1);
             settingsStorageManager.save(viewSettings);
             render();
         }
@@ -303,6 +334,19 @@ paginationNextPageButton.addEventListener("click", () => {
     }
 });
 
+function updateScrollToTopVisibility() {
+    const show = window.scrollY > scrollToTopThreshold;
+    scrollToTopButton.classList.toggle("hidden", !show);
+}
+
+scrollToTopButton.addEventListener("click", () => {
+    searchInput.scrollIntoView({ block: "start", behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+    updateScrollToTopVisibility();
+}, { passive: true });
+
 openTagsButton.addEventListener("click", () => {
     tagModal.classList.toggle("hidden", false);
 });
@@ -414,9 +458,303 @@ function updateTagFiltersFromUI() {
     render();
 }
 
+/** Returns category order (same as in allTags) plus "Other" if needed. */
+function getCategoryOrder(visibleItems) {
+    const order = Object.keys(allTags);
+    const hasOther = visibleItems.some(item => !item.tags || Object.keys(item.tags).length === 0 || !Object.keys(item.tags).some(t => allTags[t]));
+    return hasOther ? [...order, "Other"] : order;
+}
+
+/**
+ * Groups visible items by category then subcategory. Each item is added to every
+ * category/subcategory it belongs to. Order follows allTags.
+ * Returns { categoryOrder, groups: { [category]: { subcategoryOrder: string[], itemsBySub: { [subcategory]: item[] } } } }.
+ */
+function groupVisibleItemsByCategoryAndSubcategory(visibleItems) {
+    const categoryOrder = getCategoryOrder(visibleItems);
+    const groups = {};
+
+    function ensureGroup(category) {
+        if (!groups[category]) {
+            groups[category] = { subcategoryOrder: [...(allTags[category] || [])], itemsBySub: {} };
+        }
+        return groups[category];
+    }
+
+    function addItem(category, subcategory, item) {
+        const g = ensureGroup(category);
+        if (!g.itemsBySub[subcategory]) {
+            g.itemsBySub[subcategory] = [];
+        }
+        g.itemsBySub[subcategory].push(item);
+    }
+
+    for (const item of visibleItems) {
+        if (!item.tags || Object.keys(item.tags).length === 0) {
+            addItem("Other", "", item);
+            continue;
+        }
+
+        let addedToKnown = false;
+        for (const cat of categoryOrder) {
+            if (cat === "Other") continue;
+            if (!item.tags[cat]) continue;
+            addedToKnown = true;
+            const itemSubs = item.tags[cat];
+            if (itemSubs.length === 0) {
+                addItem(cat, "", item);
+            } else {
+                for (const sub of itemSubs) {
+                    addItem(cat, sub, item);
+                }
+            }
+        }
+
+        if (!addedToKnown) {
+            addItem("Other", "", item);
+        }
+    }
+
+    return { categoryOrder, groups };
+}
+
+/** Removes the item from categoryViewData so it won't be rendered when other categories are opened later. */
+function removeItemFromCategoryViewData(item) {
+    if (!categoryViewData || !categoryViewData.groups) return;
+    const { groups } = categoryViewData;
+    for (const category of Object.keys(groups)) {
+        const itemsBySub = groups[category].itemsBySub;
+        for (const sub of Object.keys(itemsBySub)) {
+            const arr = itemsBySub[sub];
+            const idx = arr.findIndex(i => i.internalName === item.internalName);
+            if (idx !== -1) arr.splice(idx, 1);
+        }
+    }
+}
+
+/** Returns the number of unique items (by internalName) in a category across all its subcategories. */
+function getCategoryUniqueItemCount(groups, categoryName) {
+    const group = groups[categoryName];
+    if (!group) return 0;
+    const seen = new Set();
+    for (const arr of Object.values(group.itemsBySub)) {
+        for (const item of arr) {
+            seen.add(item.internalName);
+        }
+    }
+    return seen.size;
+}
+
+/** Updates the (N) count in every category and subcategory summary to match current item counts. */
+function updateCategoryViewCounts() {
+    if (!categoryView || !categoryViewData || !categoryViewData.groups) return;
+    const groups = categoryViewData.groups;
+
+    function getSummaryName(summaryEl) {
+        const text = summaryEl.textContent || "";
+        const match = text.match(/^(.+?)\s*\(\d+\)\s*$/);
+        return match ? match[1].trim() : text;
+    }
+
+    categoryView.querySelectorAll(".category-group").forEach(details => {
+        const summary = details.querySelector("summary.category-group-summary");
+        if (!summary) return;
+
+        const name = getSummaryName(summary);
+        let count = 0;
+
+        if (details.classList.contains("subcategory-group")) {
+            const content = details.querySelector(".category-group-content");
+            const ul = content && content.querySelector("ul.category-group-items");
+            if (ul) {
+                count = ul.children.length;
+            } else {
+                const cat = details.dataset.category;
+                const sub = details.dataset.subcategory || "";
+                const arr = groups[cat] && groups[cat].itemsBySub[sub];
+                count = arr ? arr.length : 0;
+            }
+        } else {
+            const content = details.querySelector(".category-group-content");
+            const subDetailsList = content && content.querySelectorAll(":scope > .subcategory-group");
+            if (subDetailsList && subDetailsList.length > 0) {
+                count = getCategoryUniqueItemCount(groups, details.dataset.category);
+            } else {
+                const ul = content && content.querySelector("ul.category-group-items");
+                if (ul) count = ul.children.length;
+                else {
+                    const cat = details.dataset.category;
+                    count = getCategoryUniqueItemCount(groups, cat);
+                }
+            }
+        }
+
+        summary.textContent = `${name} (${count})`;
+    });
+}
+
+/** Removes details (subcategory or category) whose item list is empty; if a category loses all subcategories, removes the category too. */
+function removeEmptyCategorySections(ulsToCheck) {
+    const categoryDetailsToCheck = new Set();
+    ulsToCheck.forEach(ul => {
+        if (ul.children.length !== 0) return;
+        const content = ul.parentElement;
+        if (!content || !content.classList.contains("category-group-content")) return;
+        const details = content.parentElement;
+        if (!details) return;
+        const isSubcategory = details.classList.contains("subcategory-group");
+        const categoryContent = isSubcategory ? details.parentElement : null;
+        details.remove();
+        if (isSubcategory && categoryContent && categoryContent.children.length === 0) {
+            const categoryDetails = categoryContent.parentElement;
+            if (categoryDetails) categoryDetailsToCheck.add(categoryDetails);
+        }
+    });
+    categoryDetailsToCheck.forEach(categoryDetails => {
+        categoryDetails.remove();
+    });
+}
+
+/** Removes category/subcategory sections that are empty in categoryViewData (e.g. lazy sections that were never opened). */
+function removeEmptyCategorySectionsFromData() {
+    if (!categoryViewData || !categoryViewData.groups) return;
+    const groups = categoryViewData.groups;
+
+    categoryView.querySelectorAll(".category-group.subcategory-group").forEach(details => {
+        const cat = details.dataset.category;
+        const sub = details.dataset.subcategory ?? "";
+        const arr = groups[cat] && groups[cat].itemsBySub[sub];
+        if (!arr || arr.length === 0) {
+            const categoryContent = details.parentElement;
+            details.remove();
+            if (categoryContent && categoryContent.children.length === 0) {
+                const categoryDetails = categoryContent.parentElement;
+                if (categoryDetails) categoryDetails.remove();
+            }
+        }
+    });
+
+    categoryView.querySelectorAll(".category-group:not(.subcategory-group)").forEach(details => {
+        const content = details.querySelector(".category-group-content");
+        const hasSubcategories = content && content.querySelectorAll(":scope > .subcategory-group").length > 0;
+        if (hasSubcategories) return;
+        const cat = details.dataset.category;
+        const total = getCategoryUniqueItemCount(groups, cat);
+        if (total === 0) details.remove();
+    });
+}
+
+function appendCategoryCollapse(detailsElement) {
+    const collapse = document.createElement("button");
+    collapse.type = "button";
+    collapse.className = "category-group-collapse";
+    collapse.textContent = "▲ Collapse";
+    collapse.addEventListener("click", (e) => {
+        e.preventDefault();
+        detailsElement.open = false;
+    });
+    detailsElement.appendChild(collapse);
+}
+
+function renderCategoryItems(container, itemsInCategory) {
+    const ul = document.createElement("ul");
+    ul.className = "item-list list category-group-items";
+    for (const item of itemsInCategory) {
+        const itemElement = createItemElement(item);
+        ul.appendChild(itemElement);
+    }
+    container.appendChild(ul);
+}
+
 function render() {
     let visibleItems = filterVisibleItems();
 
+    if (viewSettings.viewStyle === "categories") {
+        categoryView.innerHTML = "";
+        paginationSection.classList.add("hidden");
+
+        const { categoryOrder, groups } = groupVisibleItemsByCategoryAndSubcategory(visibleItems);
+        categoryViewData = { categoryOrder, groups };
+
+        const categoriesToShow = Object.keys(selectedTagFilters).length === 0
+            ? categoryOrder
+            : categoryOrder.filter(cat => Object.prototype.hasOwnProperty.call(selectedTagFilters, cat));
+
+        for (const categoryName of categoriesToShow) {
+            const group = groups[categoryName];
+            if (!group) continue;
+
+            const totalInCategory = getCategoryUniqueItemCount(groups, categoryName);
+            const subcategoryOrder = group.subcategoryOrder;
+            const subKeysWithItems = Object.keys(group.itemsBySub).filter(k => group.itemsBySub[k].length > 0);
+            const orderedSubKeys = [
+                ...subcategoryOrder.filter(s => group.itemsBySub[s]?.length > 0),
+                ...subKeysWithItems.filter(s => !subcategoryOrder.includes(s))
+            ];
+            const subcategoriesToShow = Object.keys(selectedTagFilters).length === 0
+                ? orderedSubKeys
+                : (selectedTagFilters[categoryName] === null || selectedTagFilters[categoryName] === undefined)
+                    ? orderedSubKeys
+                    : orderedSubKeys.filter(sub => selectedTagFilters[categoryName].includes(sub));
+            const hasSubcategories = subcategoriesToShow.length > 1 || (subcategoriesToShow.length === 1 && subcategoriesToShow[0] !== "");
+
+            const details = document.createElement("details");
+            details.className = "category-group";
+            details.dataset.category = categoryName;
+
+            const summary = document.createElement("summary");
+            summary.className = "category-group-summary";
+            summary.textContent = `${categoryName} (${totalInCategory})`;
+            details.appendChild(summary);
+
+            const content = document.createElement("div");
+            content.className = "category-group-content";
+
+            if (hasSubcategories) {
+                for (const subName of subcategoriesToShow) {
+                    const itemsInSub = group.itemsBySub[subName];
+                    if (!itemsInSub || itemsInSub.length === 0) continue;
+
+                    const subDetails = document.createElement("details");
+                    subDetails.className = "category-group subcategory-group";
+                    subDetails.dataset.category = categoryName;
+                    subDetails.dataset.subcategory = subName;
+
+                    const subSummary = document.createElement("summary");
+                    subSummary.className = "category-group-summary";
+                    subSummary.textContent = subName === "" ? `Other (${itemsInSub.length})` : `${subName} (${itemsInSub.length})`;
+                    subDetails.appendChild(subSummary);
+
+                    const subContent = document.createElement("div");
+                    subContent.className = "category-group-content";
+                    subDetails.appendChild(subContent);
+                    content.appendChild(subDetails);
+
+                    subDetails.addEventListener("toggle", () => {
+                        if (subDetails.open && subContent.children.length === 0) {
+                            renderCategoryItems(subContent, itemsInSub);
+                        }
+                    });
+                    appendCategoryCollapse(subDetails);
+                }
+            } else {
+                const itemsFlat = subcategoriesToShow.length > 0 ? group.itemsBySub[subcategoriesToShow[0]] : [];
+                details.addEventListener("toggle", () => {
+                    if (details.open && content.children.length === 0) {
+                        renderCategoryItems(content, itemsFlat);
+                    }
+                });
+            }
+
+            details.appendChild(content);
+            appendCategoryCollapse(details);
+            categoryView.appendChild(details);
+        }
+        return;
+    }
+
+    categoryViewData = null;
+    paginationSection.classList.remove("hidden");
     itemSection.innerHTML = "";
 
     let start = (currentPage - 1) * viewSettings.pageSize;
@@ -503,7 +841,6 @@ function filterVisibleItems() {
     if (searchQuery) {
         newVisibleItems = newVisibleItems.filter(i =>
             i.name.toLowerCase().includes(searchQuery) ||
-            i.internalName.toLowerCase().includes(searchQuery) ||
             String(i.id).includes(searchQuery)
         );
     }
@@ -518,8 +855,43 @@ function filterVisibleItems() {
     return newVisibleItems;
 }
 
+/** Returns true if the item is visible given the current tag, "show items", and search filters (same logic as filterVisibleItems). */
+function itemMatchesVisibilityFilters(item) {
+    if (Object.keys(selectedTagFilters).length > 0) {
+        const passesTagFilter = Object.entries(selectedTagFilters).some(([tag, subtags]) => {
+            if (!item.tags || !item.tags[tag]) return false;
+            if (subtags === null) return true;
+            return subtags.some(subtag => item.tags[tag].includes(subtag));
+        });
+        if (!passesTagFilter) return false;
+    }
+
+    const fullyResearchedFilter = (item) => showFullyResearched && !item.isUnobtainable && (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp));
+    const partiallyResearchedFilter = (item) => showPartiallyResearched && !item.isUnobtainable && (item.researched > 0 && !(item.fullyResearched || item.fullyResearchedTemp));
+    const notResearchedFilter = (item) => showNotResearched && !item.isUnobtainable && (item.notResearchedTemp || (item.researched == 0 && !item.fullyResearchedTemp));
+    const unobtainableFilter = (item) => showUnobtainable && item.isUnobtainable;
+
+    const passesResearchFilters =
+        fullyResearchedFilter(item) ||
+        partiallyResearchedFilter(item) ||
+        notResearchedFilter(item) ||
+        unobtainableFilter(item);
+
+    if (!passesResearchFilters) return false;
+
+    if (searchQuery) {
+        return (
+            item.name.toLowerCase().includes(searchQuery) ||
+            item.internalName.toLowerCase().includes(searchQuery) ||
+            String(item.id).includes(searchQuery)
+        );
+    }
+    return true;
+}
+
 function createItemElement(item) {
     const li = document.createElement("li");
+    li.dataset.itemInternalName = item.internalName;
 
     if (item.fullyResearchedTemp && !item.fullyResearched) {
         li.classList.add("item-fully-researched-temp");
@@ -537,13 +909,57 @@ function createItemElement(item) {
         li.classList.add("color-grey");
     }
 
-    if (viewSettings.viewStyle === "list") {
+    const effectiveStyle = viewSettings.viewStyle === "categories" ? "list" : viewSettings.viewStyle;
+    if (effectiveStyle === "list") {
         li.append(createListItemElement(item));
     } else {
         li.append(createGridItemElement(item));
     }
 
     return li;
+}
+
+function updateItemElementState(li, item) {
+    li.classList.remove("item-fully-researched-temp", "item-not-researched-temp", "item-fully-researched", "item-partially-researched", "item-not-researched");
+    if (item.fullyResearchedTemp && !item.fullyResearched) {
+        li.classList.add("item-fully-researched-temp");
+    } else if (item.notResearchedTemp) {
+        li.classList.add("item-not-researched-temp");
+    } else if (item.fullyResearched) {
+        li.classList.add("item-fully-researched");
+    } else if (item.researched > 0) {
+        li.classList.add("item-partially-researched");
+    } else {
+        li.classList.add("item-not-researched");
+    }
+
+    const checkbox = li.querySelector(".research-checkbox");
+    if (checkbox) {
+        if (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp)) {
+            checkbox.checked = true;
+            checkbox.indeterminate = false;
+        } else if (item.notResearchedTemp) {
+            checkbox.checked = false;
+            checkbox.indeterminate = false;
+        } else if (item.researched > 0 && item.researched < item.neededForResearch) {
+            checkbox.checked = false;
+            checkbox.indeterminate = true;
+        } else {
+            checkbox.checked = false;
+            checkbox.indeterminate = false;
+        }
+    }
+
+    let researchedNum = item.researched;
+    if (item.fullyResearchedTemp && !item.fullyResearched) {
+        researchedNum = item.neededForResearch + "*";
+    } else if (item.notResearchedTemp) {
+        researchedNum = "0*";
+    }
+    const researchedEl = li.querySelector("[data-meta=\"researched\"]");
+    if (researchedEl) {
+        researchedEl.innerText = `Researched:\u00A0${researchedNum}`;
+    }
 }
 
 function createItemImageElement(item) {
@@ -602,7 +1018,8 @@ function createListItemElement(item) {
 
     const itemResearched = div();
     itemResearched.classList.add("item-meta");
-    
+    itemResearched.dataset.meta = "researched";
+
     let researchedNum = item.researched;
     if (item.fullyResearchedTemp && !item.fullyResearched) {
         researchedNum = item.neededForResearch + "*";
@@ -670,7 +1087,8 @@ function createGridItemElement(item) {
     gridItemContent.append(idElement);
 
     const researchedElement = itemSlotMeta.cloneNode();
-    
+    researchedElement.dataset.meta = "researched";
+
     let researchedNum = item.researched;
     if (item.fullyResearchedTemp && !item.fullyResearched) {
         researchedNum = item.neededForResearch + "*";
@@ -743,8 +1161,27 @@ function createResearchCheckbox(item) {
             itemStorageManager.save(items);
         }
         renderSummary();
-        render();
-        updateTagPercents();
+        if (viewSettings.viewStyle === "categories") {
+            const itemElements = categoryView.querySelectorAll(`[data-item-internal-name="${item.internalName}"]`);
+            if (itemMatchesVisibilityFilters(item)) {
+                itemElements.forEach(li => updateItemElementState(li, item));
+            } else {
+                removeItemFromCategoryViewData(item);
+                const ulsToCheck = new Set();
+                itemElements.forEach(li => {
+                    const ul = li.closest("ul.category-group-items");
+                    if (ul) ulsToCheck.add(ul);
+                    li.remove();
+                });
+                removeEmptyCategorySections(ulsToCheck);
+                removeEmptyCategorySectionsFromData();
+                updateCategoryViewCounts();
+            }
+            updateTagPercents();
+        } else {
+            render();
+            updateTagPercents();
+        }
     });
 
     return researchCheckboxLabel;

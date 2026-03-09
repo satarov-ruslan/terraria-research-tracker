@@ -43,6 +43,7 @@
                 <div class="dropdown-menu" id="viewStyleDropdownMenu">
                     <div class="dropdown-select" data-value="grid">Grid</div>
                     <div class="dropdown-select" data-value="list">List</div>
+                    <div class="dropdown-select" data-value="categories">Categories</div>
                 </div>
             </div>
 
@@ -101,11 +102,11 @@
             </div>
 
             <div>
-                <button id="openTagsButton">Filter by tags</button>
+                <button id="openTagsButton">Filter by categories</button>
                 <div id="tagModal" class="modal hidden">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div>Filter by tags</div>
+                            <div>Filter by categories</div>
                             <button id="closeTagsButton">✕</button>
                         </div>
                         <div id="tagContainer" class="tag-container"></div>
@@ -137,7 +138,10 @@
             <div class="progress-percent" id="progressPercentLabel">0%</div>
         </div>
 
-        <ul id="itemSection" class="item-list grid"></ul>
+        <div id="itemSectionWrapper">
+            <ul id="itemSection" class="item-list grid"></ul>
+            <div id="categoryView" class="category-view hidden"></div>
+        </div>
 
         <div id="paginationSection" class="pagination">
             <button id="paginationPreviousPageButton">◄</button>
@@ -145,6 +149,10 @@
             <button id="paginationNextPageButton">►</button>
         </div>
     </div>
+
+    <button type="button" id="scrollToTopButton" class="scroll-to-top hidden" title="Scroll to top" aria-label="Scroll to top">
+        <img src="https://terraria.wiki.gg/images/SmartCursorArrow_%28up%29.png" alt="Scroll to top">
+    </button>
 
     <script src="src/local_storage_manager.js"></script>
     <script src="src/reader.js"></script>

@@ -14869,7 +14869,7 @@ const allItems = [
             ],
             "Misc": [
                 "Materials",
-                "Drop"
+                "Drops"
             ]
         },
         internalName: "Rope",
@@ -39654,7 +39654,7 @@ const allItems = [
         itemUrl: "Flairon",
         id: 2611,
         researched: 0,
-        imageUrl: "Flairon.png"
+        imageUrl: "Flairoon.png"
     },
     {
         name: "Green Dungeon Chest",
@@ -66085,7 +66085,9 @@ const allItems = [
         name: "Blue Kite",
         neededForResearch: 1,
         tags: {
-            "Misc": [],
+            "Tools": [
+                "Other Tools"
+            ],
             "Misc": [
                 "Drops"
             ]
@@ -71650,7 +71652,7 @@ const allItems = [
         name: "Ghostar's Soul Jar",
         neededForResearch: 1,
         tags: {
-            "Furniture": [
+            "Equipment": [
                 "Vanity"
             ]
         },
