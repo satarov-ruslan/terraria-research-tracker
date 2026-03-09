@@ -218,7 +218,18 @@ h2 {
     transition: transform 0.2s ease;
 }
 
-.category-group[open] .category-group-summary::before {
+.category-group[open] > .category-group-summary::before {
+    transform: rotate(90deg);
+}
+
+.category-group.subcategory-group .category-group-summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.category-group.subcategory-group[open] > .category-group-summary::before {
     transform: rotate(90deg);
 }
 

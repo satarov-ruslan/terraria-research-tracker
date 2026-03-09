@@ -487,11 +487,15 @@ function updateTagFiltersFromUI() {
     render();
 }
 
-/** Returns category order (same as in allTags) plus "Other" if needed. */
+/** Returns category order (same as in allTags) plus "Unobtainable" and/or "Other" if needed. */
 function getCategoryOrder(visibleItems) {
     const order = Object.keys(allTags);
-    const hasOther = visibleItems.some(item => !item.tags || Object.keys(item.tags).length === 0 || !Object.keys(item.tags).some(t => allTags[t]));
-    return hasOther ? [...order, "Other"] : order;
+    const hasUnobtainable = visibleItems.some(item => item.isUnobtainable);
+    const hasOther = visibleItems.some(item => !item.isUnobtainable && (!item.tags || Object.keys(item.tags).length === 0 || !Object.keys(item.tags).some(t => allTags[t])));
+    const extra = [];
+    if (hasUnobtainable) extra.push("Unobtainable");
+    if (hasOther) extra.push("Other");
+    return extra.length ? [...order, ...extra] : order;
 }
 
 /**
@@ -519,6 +523,11 @@ function groupVisibleItemsByCategoryAndSubcategory(visibleItems) {
     }
 
     for (const item of visibleItems) {
+        if (item.isUnobtainable) {
+            addItem("Unobtainable", "", item);
+            continue;
+        }
+
         if (!item.tags || Object.keys(item.tags).length === 0) {
             addItem("Other", "", item);
             continue;
@@ -526,7 +535,7 @@ function groupVisibleItemsByCategoryAndSubcategory(visibleItems) {
 
         let addedToKnown = false;
         for (const cat of categoryOrder) {
-            if (cat === "Other") continue;
+            if (cat === "Other" || cat === "Unobtainable") continue;
             if (!item.tags[cat]) continue;
             addedToKnown = true;
             const itemSubs = item.tags[cat];
