@@ -34,6 +34,7 @@ const sortByDropdownMenu = document.getElementById("sortByDropdownMenu");
 const openTagsButton = document.getElementById("openTagsButton");
 const tagModal = document.getElementById("tagModal");
 const tagContainer = document.getElementById("tagContainer");
+const resetTagsButton = document.getElementById("resetTagsButton");
 const closeTagsButton = document.getElementById("closeTagsButton");
 
 const playerNameLabel = document.getElementById("playerNameLabel");
@@ -358,6 +359,14 @@ openTagsButton.addEventListener("click", () => {
 
 closeTagsButton.addEventListener("click", () => {
     tagModal.classList.toggle("hidden", true);
+});
+
+resetTagsButton.addEventListener("click", () => {
+    tagContainer.querySelectorAll("input[type='checkbox']").forEach(cb => {
+        cb.checked = false;
+        cb.indeterminate = false;
+    });
+    updateTagFiltersFromUI();
 });
 
 tagModal.addEventListener("click", (e) => {

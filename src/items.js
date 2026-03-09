@@ -10440,8 +10440,8 @@ const allItems = [
             ],
             "Misc": [
                 "Drops",
-                "Drunk World",
-                "For the Worthy World"
+                "'Drunk' World",
+                "'For the Worthy' World"
             ]
         },
         internalName: "RedPotion",
@@ -75864,7 +75864,7 @@ const allItems = [
                 "Armor"
             ],
             "Misc": [
-                "Drunk World"
+                "'Drunk' World"
             ]
         },
         internalName: "MoonLordLegs",
@@ -80882,7 +80882,7 @@ const allItems = [
                 "Summoning Items"
             ],
             "Misc": [
-                "For the Worthy World"
+                "'For the Worthy' World"
             ]
         },
         internalName: "MechdusaSummon",
@@ -81675,7 +81675,7 @@ const allItems = [
             ],
             "Misc": [
                 "Drops",
-                "For the Worthy World"
+                "'For the Worthy' World"
             ]
         },
         internalName: "WaffleIron",
@@ -83762,7 +83762,7 @@ const allItems = [
                 "Vanity"
             ],
             "Misc": [
-                "For the Worthy World"
+                "'For the Worthy' World"
             ]
         },
         internalName: "MoonLordBody",
@@ -93863,8 +93863,8 @@ const allTags = {
         "Drops",
         "Shimmering",
         "Novelty Items",
-        "Drunk World",
-        "For the Worthy World",
+        "'Drunk' World",
+        "'For the Worthy' World",
         "Other"
     ]
 }
