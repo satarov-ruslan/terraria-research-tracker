@@ -43,8 +43,11 @@
                 <div class="dropdown-menu" id="viewStyleDropdownMenu">
                     <div class="dropdown-select" data-value="grid">Grid</div>
                     <div class="dropdown-select" data-value="list">List</div>
-                    <div class="dropdown-select" data-value="categories">Categories</div>
                 </div>
+            </div>
+
+            <div>
+                <button type="button" id="groupByCategoriesButton" class="toolbar-toggle" title="Group items by categories">Group by categories</button>
             </div>
 
             <div class="dropdown" id="pageSizeDropdown">
@@ -103,7 +106,7 @@
             </div>
 
             <div>
-                <button id="openTagsButton">Filter by categories</button>
+                <button id="openTagsButton" class="toolbar-toggle">Filter by categories</button>
                 <div id="tagModal" class="modal hidden">
                     <div class="modal-content">
                         <div class="modal-header">

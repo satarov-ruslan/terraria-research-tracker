@@ -58,6 +58,7 @@ const paginationPreviousPageButton = document.getElementById("paginationPrevious
 const paginationPageNumberLabel = document.getElementById("paginationPageNumberLabel");
 const paginationNextPageButton = document.getElementById("paginationNextPageButton");
 
+const groupByCategoriesButton = document.getElementById("groupByCategoriesButton");
 const scrollToTopButton = document.getElementById("scrollToTopButton");
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -66,12 +67,20 @@ const itemStorageManager = new LocalStorageManager("terraria-research", structur
 const settingsStorageManager = new LocalStorageManager("terraria-settings", {
     playerName: "no name",
     viewStyle: "grid",
+    groupByCategories: false,
     pageSize: 50,
     pageSizeLabel: "50",
     sortBy: "ID",
 });
 
 const viewSettings = settingsStorageManager.load();
+if (viewSettings.viewStyle === "categories") {
+    viewSettings.viewStyle = "list";
+    viewSettings.groupByCategories = true;
+}
+if (viewSettings.groupByCategories === undefined) {
+    viewSettings.groupByCategories = false;
+}
 
 let currentPage = 1;
 
@@ -111,8 +120,9 @@ playerNameLabel.textContent = viewSettings.playerName;
 
 itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
 itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
-itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
-categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+itemSection.classList.toggle("hidden", viewSettings.groupByCategories);
+categoryView.classList.toggle("hidden", !viewSettings.groupByCategories);
+groupByCategoriesButton.classList.toggle("active", viewSettings.groupByCategories);
 updateScrollToTopVisibility();
 
 viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle.charAt(0).toUpperCase() + viewSettings.viewStyle.slice(1);
@@ -168,8 +178,9 @@ confirmResetButton.addEventListener("click", () => {
 
     itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
     itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
-    itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
-    categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+    itemSection.classList.toggle("hidden", viewSettings.groupByCategories);
+    categoryView.classList.toggle("hidden", !viewSettings.groupByCategories);
+    groupByCategoriesButton.classList.toggle("active", viewSettings.groupByCategories);
     updateScrollToTopVisibility();
     viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle.charAt(0).toUpperCase() + viewSettings.viewStyle.slice(1);
 
@@ -220,14 +231,24 @@ viewStyleDropdownMenu.querySelectorAll(".dropdown-select").forEach(viewSelect =>
             viewSettings.viewStyle = newViewStyle;
             itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
             itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
-            itemSection.classList.toggle("hidden", viewSettings.viewStyle === "categories");
-            categoryView.classList.toggle("hidden", viewSettings.viewStyle !== "categories");
+            itemSection.classList.toggle("hidden", viewSettings.groupByCategories);
+            categoryView.classList.toggle("hidden", !viewSettings.groupByCategories);
             updateScrollToTopVisibility();
             viewStyleDropdownToggleLabel.innerText = newViewStyle.charAt(0).toUpperCase() + newViewStyle.slice(1);
             settingsStorageManager.save(viewSettings);
             render();
         }
     })
+});
+
+groupByCategoriesButton.addEventListener("click", () => {
+    viewSettings.groupByCategories = !viewSettings.groupByCategories;
+    settingsStorageManager.save(viewSettings);
+    itemSection.classList.toggle("hidden", viewSettings.groupByCategories);
+    categoryView.classList.toggle("hidden", !viewSettings.groupByCategories);
+    groupByCategoriesButton.classList.toggle("active", viewSettings.groupByCategories);
+    updateScrollToTopVisibility();
+    render();
 });
 
 showItemsDropdownToggle.addEventListener("click", () => {
@@ -356,7 +377,7 @@ paginationNextPageButton.addEventListener("click", () => {
 });
 
 function updateScrollToTopVisibility() {
-    const show = window.scrollY > scrollToTopThreshold;
+    const show = viewSettings.groupByCategories && window.scrollY > scrollToTopThreshold;
     scrollToTopButton.classList.toggle("hidden", !show);
 }
 
@@ -365,7 +386,7 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-    updateScrollToTopVisibility();
+    if (viewSettings.groupByCategories) updateScrollToTopVisibility();
 }, { passive: true });
 
 openTagsButton.addEventListener("click", () => {
@@ -696,7 +717,7 @@ function appendCategoryCollapse(detailsElement) {
 
 function renderCategoryItems(container, itemsInCategory) {
     const ul = document.createElement("ul");
-    ul.className = "item-list list category-group-items";
+    ul.className = `item-list ${viewSettings.viewStyle} category-group-items`;
     for (const item of itemsInCategory) {
         const itemElement = createItemElement(item);
         ul.appendChild(itemElement);
@@ -707,7 +728,7 @@ function renderCategoryItems(container, itemsInCategory) {
 function render() {
     let visibleItems = filterVisibleItems();
 
-    if (viewSettings.viewStyle === "categories") {
+    if (viewSettings.groupByCategories) {
         categoryView.innerHTML = "";
         paginationSection.classList.add("hidden");
 
@@ -947,7 +968,7 @@ function createItemElement(item) {
         li.classList.add("color-grey");
     }
 
-    const effectiveStyle = viewSettings.viewStyle === "categories" ? "list" : viewSettings.viewStyle;
+    const effectiveStyle = viewSettings.viewStyle;
     if (effectiveStyle === "list") {
         li.append(createListItemElement(item));
     } else {
@@ -1164,6 +1185,7 @@ function createGridItemElement(item) {
 function createResearchCheckbox(item) {
     const researchCheckboxLabel = document.createElement("label");
     researchCheckboxLabel.classList.add("research-checkbox-label");
+    researchCheckboxLabel.style.cursor = "pointer";
 
     const researchCheckbox = document.createElement("input");
     researchCheckbox.type = "checkbox";
@@ -1199,7 +1221,7 @@ function createResearchCheckbox(item) {
             itemStorageManager.save(items);
         }
         renderSummary();
-        if (viewSettings.viewStyle === "categories") {
+        if (viewSettings.groupByCategories) {
             const itemElements = categoryView.querySelectorAll(`[data-item-internal-name="${item.internalName}"]`);
             if (itemMatchesVisibilityFilters(item)) {
                 itemElements.forEach(li => updateItemElementState(li, item));
