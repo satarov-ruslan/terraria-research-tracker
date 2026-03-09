@@ -84,8 +84,13 @@ let items = itemStorageManager.load();
 
 // If new items added, but the browser cache doesn't have them yet.
 allItems.forEach(itemFromAllItems => {
-    if (!items.find(item => item.internalName == itemFromAllItems.internalName)) {
+    const foundItem = items.find(item => item.internalName === itemFromAllItems.internalName);
+    if (!foundItem) {
         items.push(structuredClone(itemFromAllItems));
+    } else {
+        if (foundItem.tags !== itemFromAllItems.tags) {
+            foundItem.tags = itemFromAllItems.tags;
+        }
     }
 });
 
