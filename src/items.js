@@ -93094,6 +93094,54 @@ const allItems = [
         researched: 0,
         imageUrl: "Music_Box_(Skeletron).png"
     },
+    {
+        name: "Music Box (Rainbow Boulder)",
+        neededForResearch: 1,
+        tags: {
+            "Furniture": [
+                "Music Boxes"
+            ],
+            "Equipment": [
+                "Accessories",
+                "Vanity"
+            ]
+        },
+        internalName: "MusicBoxRainbowBoulder",
+        itemUrl: "Music_Box_(Rainbow_Boulder)",
+        id: 6145,
+        researched: 0,
+        imageUrl: "Music_Box_(Rainbow_Boulder).png"
+    },
+    {
+        name: "Music Box (Silence)",
+        neededForResearch: 1,
+        tags: {
+            "Furniture": [
+                "Music Boxes"
+            ],
+            "Equipment": [
+                "Accessories",
+                "Vanity"
+            ],
+            "Misc": [
+                "Shimmering"
+            ]
+        },
+        internalName: "MusicBoxSilence",
+        itemUrl: "Music_Box_(Silence)",
+        id: 6146,
+        researched: 0,
+        imageUrl: "Music_Box_(Silence).png"
+    },
+
+
+
+
+
+
+
+
+// // // Unobtainable items
 
     {
         name: "Heart",
