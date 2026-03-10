@@ -377,7 +377,7 @@ paginationNextPageButton.addEventListener("click", () => {
 });
 
 function updateScrollToTopVisibility() {
-    const show = viewSettings.groupByCategories && window.scrollY > scrollToTopThreshold;
+    const show = window.scrollY > scrollToTopThreshold;
     scrollToTopButton.classList.toggle("hidden", !show);
 }
 
@@ -386,7 +386,7 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-    if (viewSettings.groupByCategories) updateScrollToTopVisibility();
+    updateScrollToTopVisibility();
 }, { passive: true });
 
 openTagsButton.addEventListener("click", () => {
