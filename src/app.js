@@ -1197,11 +1197,12 @@ function createResearchCheckbox(item) {
         researchCheckbox.indeterminate = true;
     }
 
-    const researchImage = document.createElement("img");
-    researchImage.alt = "Research";
-    researchImage.src = imageUrlBase + "Power_Menu_Toggle.png";
+    const researchCheckboxIcon = document.createElement("img");
+    researchCheckboxIcon.alt = "Research";
+    researchCheckboxIcon.src = imageUrlBase + "Power_Menu_Toggle.png";
+    researchCheckboxIcon.classList.add("research-checkbox-icon");
 
-    researchCheckboxLabel.append(researchCheckbox, researchImage);
+    researchCheckboxLabel.append(researchCheckbox, researchCheckboxIcon);
 
     researchCheckbox.addEventListener("change", (e) => {
         if (e.target.checked) {
