@@ -61,6 +61,31 @@ const paginationNextPageButton = document.getElementById("paginationNextPageButt
 const groupByCategoriesButton = document.getElementById("groupByCategoriesButton");
 const scrollToTopButton = document.getElementById("scrollToTopButton");
 
+const autoRefreshCheckbox = document.getElementById("autoRefreshCheckbox");
+const autoRefreshTooltipText = document.getElementById("autoRefreshTooltipText");
+const autoRefreshTooltipWrapper = document.querySelector(".auto-refresh-tooltip-wrapper");
+const refreshButton = document.getElementById("refreshButton");
+const reloadFileHint = document.getElementById("reloadFileHint");
+
+const supportsFilePicker = typeof window.showOpenFilePicker !== "undefined";
+
+const FILE_PICKER_OPTIONS = {
+    types: [
+        {
+            description: "Player File",
+            accept: {
+                "application/octet-stream": [".plr", ".plr.bak"],
+            },
+        },
+    ],
+    excludeAcceptAllOption: true,
+    multiple: false,
+};
+
+let autoRefreshIntervalId = null;
+let autoRefreshFileHandle = null;
+let autoRefreshLastModified = null;
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const itemStorageManager = new LocalStorageManager("terraria-research", structuredClone(allItems));
@@ -71,6 +96,7 @@ const settingsStorageManager = new LocalStorageManager("terraria-settings", {
     pageSize: 50,
     pageSizeLabel: "50",
     sortBy: "ID",
+    dataLoadedFromPlayerFile: false,
 });
 
 const viewSettings = settingsStorageManager.load();
@@ -80,6 +106,9 @@ if (viewSettings.viewStyle === "categories") {
 }
 if (viewSettings.groupByCategories === undefined) {
     viewSettings.groupByCategories = false;
+}
+if (viewSettings.dataLoadedFromPlayerFile === undefined) {
+    viewSettings.dataLoadedFromPlayerFile = false;
 }
 
 let currentPage = 1;
@@ -138,6 +167,61 @@ renderTags();
 renderSummary();
 render();
 
+updateReloadFileHintVisibility();
+
+autoRefreshTooltipText.textContent = supportsFilePicker
+    ? "Auto refresh will reset your manual changes"
+    : "Not supported in this browser";
+if (!supportsFilePicker) {
+    autoRefreshCheckbox.disabled = true;
+    refreshButton.disabled = true;
+} else {
+    refreshButton.disabled = true;
+}
+autoRefreshTooltipWrapper.addEventListener("mouseenter", () => {
+    autoRefreshTooltipText.classList.remove("flip-right");
+    const rect = autoRefreshTooltipText.getBoundingClientRect();
+    if (rect.left < 0) {
+        autoRefreshTooltipText.classList.add("flip-right");
+    }
+});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function applyLoadedPlayer(player) {
+    viewSettings.playerName = player.name;
+    viewSettings.dataLoadedFromPlayerFile = true;
+    playerNameLabel.textContent = viewSettings.playerName;
+    itemStorageManager.save(player.researchProgress.items);
+    settingsStorageManager.save(viewSettings);
+    items = player.researchProgress.items;
+    selectedTagFilters = {};
+    openTagsButton.classList.toggle("active", false);
+    currentPage = 1;
+    renderTags();
+    renderSummary();
+    render();
+}
+
+function updateReloadFileHintVisibility() {
+    const show =
+        supportsFilePicker &&
+        viewSettings.dataLoadedFromPlayerFile === true &&
+        !autoRefreshFileHandle;
+    reloadFileHint.classList.toggle("hidden", !show);
+}
+
+async function loadFromFileHandle(handle) {
+    const file = await handle.getFile();
+    const playerDeserializer = new PlayerDeserializer();
+    const player = await playerDeserializer.deserializePlayer(await file.arrayBuffer());
+    applyLoadedPlayer(player);
+    autoRefreshFileHandle = handle;
+    autoRefreshLastModified = file.lastModified;
+    refreshButton.disabled = false;
+    updateReloadFileHintVisibility();
+}
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 resetButton.addEventListener("click", () => {
@@ -187,6 +271,7 @@ confirmResetButton.addEventListener("click", () => {
     renderTags();
     renderSummary();
     render();
+    updateReloadFileHintVisibility();
 });
 
 fileInput.addEventListener("change", async () => {
@@ -201,23 +286,10 @@ fileInput.addEventListener("change", async () => {
         fileInput.value = "";
         return;
     }
-
-    viewSettings.playerName = player.name;
-    playerNameLabel.textContent = viewSettings.playerName;
-
-    itemStorageManager.save(player.researchProgress.items);
-    settingsStorageManager.save(viewSettings);
-    items = player.researchProgress.items;
-
-    selectedTagFilters = {};
-    openTagsButton.classList.toggle("active", false);
-    currentPage = 1;
-    renderTags();
-    renderSummary();
-    render();
-
+    applyLoadedPlayer(player);
     fileInput.value = "";
-})
+    updateReloadFileHintVisibility();
+});
 
 viewStyleDropdownToggle.addEventListener("click", () => {
     viewStyleDropdown.classList.toggle("open", !viewStyleDropdown.classList.contains("open"));
@@ -331,8 +403,58 @@ unobtainableCheckbox.addEventListener("change", (e) => {
     updateTagFiltersFromUI();
 });
 
-loadButton.addEventListener("click", () => {
-    fileInput.click();
+loadButton.addEventListener("click", async () => {
+    if (supportsFilePicker) {
+        try {
+            const [handle] = await window.showOpenFilePicker(FILE_PICKER_OPTIONS);
+            await loadFromFileHandle(handle);
+        } catch (err) {
+            if (err.name !== "AbortError") {
+                console.error("Load player file:", err);
+            }
+        }
+    } else {
+        fileInput.click();
+    }
+});
+
+refreshButton.addEventListener("click", async () => {
+    if (!autoRefreshFileHandle) return;
+    try {
+        const file = await autoRefreshFileHandle.getFile();
+        if (file.lastModified === autoRefreshLastModified) return;
+        const playerDeserializer = new PlayerDeserializer();
+        const player = await playerDeserializer.deserializePlayer(await file.arrayBuffer());
+        applyLoadedPlayer(player);
+        autoRefreshLastModified = file.lastModified;
+    } catch (err) {
+        console.error("Refresh from file:", err);
+    }
+});
+
+autoRefreshCheckbox.addEventListener("change", () => {
+    if (autoRefreshCheckbox.checked) {
+        if (autoRefreshFileHandle) {
+            autoRefreshIntervalId = setInterval(async () => {
+                if (!autoRefreshFileHandle) return;
+                try {
+                    const file = await autoRefreshFileHandle.getFile();
+                    if (file.lastModified === autoRefreshLastModified) return;
+                    const playerDeserializer = new PlayerDeserializer();
+                    const player = await playerDeserializer.deserializePlayer(await file.arrayBuffer());
+                    applyLoadedPlayer(player);
+                    autoRefreshLastModified = file.lastModified;
+                } catch (err) {
+                    console.error("Auto refresh:", err);
+                }
+            }, 10000);
+        }
+    } else {
+        if (autoRefreshIntervalId !== null) {
+            clearInterval(autoRefreshIntervalId);
+            autoRefreshIntervalId = null;
+        }
+    }
 });
 
 function updateSearchResetVisibility() {

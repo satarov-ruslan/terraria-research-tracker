@@ -32,7 +32,19 @@
                 <input type="file" id="fileInput" accept=".plr,.plr.bak" hidden>
                 <button id="loadButton">Load player file</button>
             </div>
+
+            <div class="auto-refresh-row">
+                <div class="tag-tooltip auto-refresh-tooltip-wrapper">
+                    <label>
+                        <input type="checkbox" id="autoRefreshCheckbox">
+                        Auto Refresh
+                    </label>
+                    <div class="tag-tooltip-text" id="autoRefreshTooltipText"></div>
+                </div>
+                <button type="button" id="refreshButton" title="Refresh from file">⟳</button>
+            </div>
         </div>
+        <div id="reloadFileHint" class="reload-file-hint hidden">Reload&nbsp;the&nbsp;player&nbsp;file to&nbsp;use&nbsp;auto&nbsp;refresh</div>
 
         <div class="toolbar">
             <div class="dropdown" id="viewStyleDropdown">

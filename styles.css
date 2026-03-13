@@ -527,9 +527,73 @@ h2 {
     color: #999;
 }
 
+.reload-file-hint {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+    margin: -12px 0 16px 0;
+}
+
 .tag-tooltip {
     position: relative;
     display: flex;
+}
+
+.auto-refresh-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.auto-refresh-tooltip-wrapper {
+    min-width: 0;
+}
+
+.auto-refresh-tooltip-wrapper label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    user-select: none;
+}
+
+#refreshButton {
+    width: auto;
+    font-size: 1.2rem;
+    padding: 0 6px;
+}
+
+#refreshButton.auto-refresh-unsupported {
+    border-color: #555;
+    background: #2a2d3d;
+    color: #888;
+}
+
+.auto-refresh-tooltip-wrapper .tag-tooltip-text {
+    top: 100%;
+    right: auto;
+    left: 0;
+    transform: translateY(8px);
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 4px;
+    max-width: 220px;
+    min-width: 0;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.auto-refresh-tooltip-wrapper .tag-tooltip-text.flip-right {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .tag-tooltip-text {
