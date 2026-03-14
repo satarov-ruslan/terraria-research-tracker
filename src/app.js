@@ -61,6 +61,7 @@ const paginationNextPageButton = document.getElementById("paginationNextPageButt
 const groupByCategoriesButton = document.getElementById("groupByCategoriesButton");
 const scrollToTopButton = document.getElementById("scrollToTopButton");
 
+const autoRefreshRow = document.querySelector(".auto-refresh-row");
 const autoRefreshCheckbox = document.getElementById("autoRefreshCheckbox");
 const autoRefreshTooltipText = document.getElementById("autoRefreshTooltipText");
 const autoRefreshTooltipWrapper = document.querySelector(".auto-refresh-tooltip-wrapper");
@@ -175,6 +176,20 @@ autoRefreshTooltipText.textContent = supportsFilePicker
 if (!supportsFilePicker) {
     autoRefreshCheckbox.disabled = true;
     refreshButton.disabled = true;
+    refreshButton.classList.add("auto-refresh-unsupported");
+    autoRefreshTooltipText.classList.add("hidden");
+    autoRefreshRow.classList.add("tag-tooltip");
+    const rowTooltip = document.createElement("div");
+    rowTooltip.className = "tag-tooltip-text auto-refresh-row-tooltip";
+    rowTooltip.textContent = "Not supported in this browser";
+    autoRefreshRow.appendChild(rowTooltip);
+    autoRefreshRow.addEventListener("mouseenter", () => {
+        rowTooltip.classList.remove("flip-right");
+        const rect = rowTooltip.getBoundingClientRect();
+        if (rect.left < 0) {
+            rowTooltip.classList.add("flip-right");
+        }
+    });
 } else {
     refreshButton.disabled = true;
 }
