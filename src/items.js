@@ -39298,10 +39298,10 @@ const allItems = [
             ]
         },
         internalName: "TartarSauce",
-        itemUrl: "Tartar_Sauce",
+        itemUrl: "Beguiling_Lyre",
         id: 2587,
         researched: 0,
-        imageUrl: "Tartar_Sauce.png"
+        imageUrl: "Beguiling_Lyre.png"
     },
     {
         name: "Duke Fishron Mask",
