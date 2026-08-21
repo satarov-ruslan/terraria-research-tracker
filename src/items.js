@@ -301,7 +301,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -318,7 +318,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -335,7 +335,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -352,7 +352,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -500,7 +500,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -909,7 +909,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -992,7 +992,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Sunflower",
@@ -1198,7 +1198,7 @@ const allItems = [
         itemUrl: "Fallen_Star",
         id: 75,
         researched: 0,
-        imageUrl: "Fallen_Star.png"
+        imageUrl: "Fallen_Star.gif"
     },
     {
         name: "Copper Greaves",
@@ -1334,7 +1334,7 @@ const allItems = [
                 "Other"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -1825,7 +1825,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -2324,7 +2324,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WaterCandle",
@@ -2338,7 +2338,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -2708,7 +2708,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Sign",
@@ -2770,7 +2770,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -3511,7 +3511,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ClayPot",
@@ -3911,7 +3911,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Vanity"
@@ -4307,7 +4307,7 @@ const allItems = [
                 "Materials"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Coral",
@@ -4994,7 +4994,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Tombstone",
@@ -5198,7 +5198,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Bench",
@@ -5311,7 +5311,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Storage Items",
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -5413,7 +5413,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PinkVase",
@@ -5427,7 +5427,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Mug",
@@ -5488,7 +5488,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Throne",
@@ -5502,7 +5502,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -5883,7 +5883,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -5900,7 +5900,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -6029,7 +6029,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -7368,7 +7368,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WoodenBeam",
@@ -7471,7 +7471,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Crafting Stations",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrystalBall",
@@ -7709,7 +7709,7 @@ const allItems = [
                 "Materials"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrystalShard",
@@ -7869,7 +7869,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Lever",
@@ -8109,7 +8109,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -8256,7 +8256,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Switch",
@@ -8287,7 +8287,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -8304,7 +8304,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -8321,7 +8321,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -8338,7 +8338,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -8977,7 +8977,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Explosives",
@@ -8991,7 +8991,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "InletPump",
@@ -9005,7 +9005,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OutletPump",
@@ -9019,7 +9019,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Timer1Second",
@@ -9033,7 +9033,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Timer3Second",
@@ -9047,7 +9047,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Timer5Second",
@@ -10821,7 +10821,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -10838,7 +10838,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -10855,7 +10855,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -10872,7 +10872,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -13016,7 +13016,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -13067,7 +13067,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -13084,7 +13084,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -13990,7 +13990,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PureWaterFountain",
@@ -14004,7 +14004,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DesertWaterFountain",
@@ -14274,7 +14274,7 @@ const allItems = [
                 "Other Weapons"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Cannon",
@@ -14288,7 +14288,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Cannonball",
@@ -14415,7 +14415,7 @@ const allItems = [
                 "Other Weapons"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LandMine",
@@ -14461,7 +14461,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "JungleWaterFountain",
@@ -14475,7 +14475,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "IcyWaterFountain",
@@ -14489,7 +14489,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CorruptWaterFountain",
@@ -14503,7 +14503,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonWaterFountain",
@@ -14517,7 +14517,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HallowedWaterFountain",
@@ -14531,7 +14531,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BloodWaterFountain",
@@ -14631,7 +14631,7 @@ const allItems = [
                 "Other Weapons"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -14887,7 +14887,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Campfire",
@@ -14943,7 +14943,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Weapons": [
                 "Other Weapons"
@@ -14960,7 +14960,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Weapons": [
                 "Other Weapons"
@@ -14977,7 +14977,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Weapons": [
                 "Other Weapons"
@@ -14994,7 +14994,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Weapons": [
                 "Other Weapons"
@@ -15250,10 +15250,10 @@ const allItems = [
             ]
         },
         internalName: "EnchantedSword",
-        itemUrl: "Enchanted_Sword_%28item%29",
+        itemUrl: "Enchanted_Sword",
         id: 989,
         researched: 0,
-        imageUrl: "Enchanted_Sword_%28item%29.png"
+        imageUrl: "Enchanted_Sword.png"
     },
     {
         name: "Pickaxe Axe",
@@ -15499,7 +15499,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -17516,7 +17516,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DungeonDoor",
@@ -17530,7 +17530,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LeadDoor",
@@ -17544,7 +17544,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "IronDoor",
@@ -17706,7 +17706,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -18047,7 +18047,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GraveMarker",
@@ -18061,7 +18061,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrossGraveMarker",
@@ -18075,7 +18075,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Headstone",
@@ -18089,7 +18089,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Gravestone",
@@ -18103,7 +18103,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Obelisk",
@@ -18210,7 +18210,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -18311,7 +18311,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -18412,7 +18412,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -18794,7 +18794,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials",
@@ -19284,7 +19284,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -19380,7 +19380,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Teleporter",
@@ -19820,7 +19820,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LihzahrdAltar",
@@ -20570,7 +20570,7 @@ const allItems = [
                 "Other Weapons"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BunnyCannon",
@@ -20896,7 +20896,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20913,7 +20913,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20930,7 +20930,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20947,7 +20947,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20964,7 +20964,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20981,7 +20981,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -20998,7 +20998,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21015,7 +21015,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21032,7 +21032,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21049,7 +21049,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21066,7 +21066,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21083,7 +21083,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -21159,7 +21159,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WallSkeleton",
@@ -21173,7 +21173,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HangingSkeleton",
@@ -21340,7 +21340,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MetalShelf",
@@ -21354,7 +21354,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BrassShelf",
@@ -21368,7 +21368,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WoodShelf",
@@ -21640,7 +21640,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueDungeonVase",
@@ -21654,7 +21654,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenDungeonVase",
@@ -21668,7 +21668,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PinkDungeonVase",
@@ -21769,7 +21769,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Catacomb",
@@ -21783,7 +21783,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DungeonShelf",
@@ -21966,7 +21966,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StarinaBottle",
@@ -22233,7 +22233,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -22425,7 +22425,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ObsidianVase",
@@ -23751,7 +23751,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -26281,7 +26281,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BarStool",
@@ -26396,7 +26396,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BanquetTable",
@@ -26410,7 +26410,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Bar",
@@ -27684,7 +27684,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HangingJackOLantern",
@@ -27829,7 +27829,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -28377,7 +28377,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -28394,7 +28394,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -28446,7 +28446,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HeartLantern",
@@ -28635,7 +28635,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ChristmasTree",
@@ -28649,7 +28649,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StarTopper1",
@@ -28663,7 +28663,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StarTopper2",
@@ -28677,7 +28677,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StarTopper3",
@@ -28691,7 +28691,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BowTopper",
@@ -28705,7 +28705,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteGarland",
@@ -28719,7 +28719,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteAndRedGarland",
@@ -28733,7 +28733,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedGardland",
@@ -28747,7 +28747,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndGreenGardland",
@@ -28761,7 +28761,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenGardland",
@@ -28775,7 +28775,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenAndWhiteGarland",
@@ -28789,7 +28789,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MulticoloredBulb",
@@ -28803,7 +28803,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedBulb",
@@ -28817,7 +28817,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowBulb",
@@ -28831,7 +28831,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenBulb",
@@ -28845,7 +28845,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndGreenBulb",
@@ -28859,7 +28859,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowAndGreenBulb",
@@ -28873,7 +28873,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndYellowBulb",
@@ -28887,7 +28887,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteBulb",
@@ -28901,7 +28901,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteAndRedBulb",
@@ -28915,7 +28915,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteAndYellowBulb",
@@ -28929,7 +28929,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WhiteAndGreenBulb",
@@ -28943,7 +28943,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MulticoloredLights",
@@ -28958,7 +28958,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedLights",
@@ -28973,7 +28973,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenLights",
@@ -28988,7 +28988,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueLights",
@@ -29002,7 +29002,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowLights",
@@ -29016,7 +29016,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndYellowLights",
@@ -29031,7 +29031,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndGreenLights",
@@ -29046,7 +29046,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowAndGreenLights",
@@ -29061,7 +29061,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueAndGreenLights",
@@ -29076,7 +29076,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAndBlueLights",
@@ -29090,7 +29090,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueAndYellowLights",
@@ -29135,7 +29135,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Holly",
@@ -29906,7 +29906,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -29923,7 +29923,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -29940,7 +29940,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -32122,7 +32122,7 @@ const allItems = [
         imageUrl: "Wall_of_Flesh_Mask.png"
     },
     {
-        name: "Twin Mask",
+        name: "Twins Mask",
         neededForResearch: 1,
         tags: {
             "Equipment": [
@@ -32133,10 +32133,10 @@ const allItems = [
             ]
         },
         internalName: "TwinMask",
-        itemUrl: "Twin_Mask",
+        itemUrl: "Twins_Mask",
         id: 2106,
         researched: 0,
-        imageUrl: "Twin_Mask.png"
+        imageUrl: "Twins_Mask.png"
     },
     {
         name: "Skeletron Prime Mask",
@@ -32262,7 +32262,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlacksmithRack",
@@ -32276,7 +32276,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CarpentryRack",
@@ -32290,7 +32290,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HelmetRack",
@@ -32304,7 +32304,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SpearRack",
@@ -32318,7 +32318,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SwordRack",
@@ -32996,7 +32996,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BunnyCage",
@@ -33010,7 +33010,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SquirrelCage",
@@ -33024,7 +33024,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MallardDuckCage",
@@ -33038,7 +33038,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DuckCage",
@@ -33052,7 +33052,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BirdCage",
@@ -33066,7 +33066,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueJayCage",
@@ -33080,7 +33080,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CardinalCage",
@@ -33177,7 +33177,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SnailCage",
@@ -33191,7 +33191,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GlowingSnailCage",
@@ -33220,7 +33220,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AmmoBox",
@@ -33234,7 +33234,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MonarchButterflyJar",
@@ -33248,7 +33248,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PurpleEmperorButterflyJar",
@@ -33262,7 +33262,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedAdmiralButterflyJar",
@@ -33276,7 +33276,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "UlyssesButterflyJar",
@@ -33290,7 +33290,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SulphurButterflyJar",
@@ -33304,7 +33304,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TreeNymphButterflyJar",
@@ -33318,7 +33318,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ZebraSwallowtailButterflyJar",
@@ -33332,7 +33332,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "JuliaButterflyJar",
@@ -33346,7 +33346,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ScorpionCage",
@@ -33360,7 +33360,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlackScorpionCage",
@@ -33402,7 +33402,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FrogCage",
@@ -33416,7 +33416,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MouseCage",
@@ -33632,7 +33632,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PenguinCage",
@@ -33646,7 +33646,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WormCage",
@@ -34065,7 +34065,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DynastyCup",
@@ -34079,7 +34079,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DynastyBowl",
@@ -34181,7 +34181,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FancyDishes",
@@ -34195,7 +34195,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GlassBowl",
@@ -34209,7 +34209,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WineGlass",
@@ -34402,7 +34402,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HoneyCup",
@@ -34416,7 +34416,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SteampunkCup",
@@ -34755,7 +34755,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TigerSkin",
@@ -34769,7 +34769,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LeopardSkin",
@@ -34783,7 +34783,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ZebraSkin",
@@ -35586,7 +35586,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WoodenCrate",
@@ -35603,7 +35603,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "IronCrate",
@@ -35620,7 +35620,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldenCrate",
@@ -35676,7 +35676,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -37134,7 +37134,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueJellyfishJar",
@@ -37148,7 +37148,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenJellyfishJar",
@@ -37162,7 +37162,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PinkJellyfishJar",
@@ -37176,7 +37176,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LifePreserver",
@@ -37190,7 +37190,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ShipsWheel",
@@ -37204,7 +37204,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CompassRose",
@@ -37218,7 +37218,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WallAnchor",
@@ -37232,7 +37232,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldfishTrophy",
@@ -37246,7 +37246,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BunnyfishTrophy",
@@ -37260,7 +37260,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SwordfishTrophy",
@@ -37274,7 +37274,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SharkteethTrophy",
@@ -37834,7 +37834,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -37851,7 +37851,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ShipInABottle",
@@ -37879,7 +37879,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PressureTrack",
@@ -37924,7 +37924,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TreasureMap",
@@ -37938,7 +37938,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SeaweedPlanter",
@@ -38313,7 +38313,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PalmWoodBench",
@@ -38577,7 +38577,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MushroomBench",
@@ -39325,7 +39325,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -39893,7 +39893,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -39910,7 +39910,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -41053,7 +41053,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeaponRack",
@@ -41067,7 +41067,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -41084,7 +41084,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials",
@@ -41606,7 +41606,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -41623,7 +41623,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BoosterTrack",
@@ -41654,7 +41654,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GrasshopperCage",
@@ -41808,7 +41808,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LivingCursedFireBlock",
@@ -41822,7 +41822,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LivingDemonFireBlock",
@@ -41836,7 +41836,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LivingFrostFireBlock",
@@ -41850,7 +41850,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LivingIchorBlock",
@@ -41864,7 +41864,7 @@ const allItems = [
         neededForResearch: 100,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LivingUltrabrightFireBlock",
@@ -45543,7 +45543,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BewitchingTable",
@@ -45558,7 +45558,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Crafting Stations",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AlchemyTable",
@@ -46287,7 +46287,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CursedCampfire",
@@ -46303,7 +46303,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DemonCampfire",
@@ -46319,7 +46319,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FrozenCampfire",
@@ -46335,7 +46335,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "IchorCampfire",
@@ -46351,7 +46351,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RainbowCampfire",
@@ -46569,7 +46569,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Sundial",
@@ -46666,7 +46666,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldBirdCage",
@@ -46680,7 +46680,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldBunnyCage",
@@ -46694,7 +46694,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldButterflyCage",
@@ -46708,7 +46708,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldFrogCage",
@@ -46722,7 +46722,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldGrasshopperCage",
@@ -46736,7 +46736,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldMouseCage",
@@ -46750,7 +46750,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldWormCage",
@@ -47414,7 +47414,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PeaceCandle",
@@ -48393,7 +48393,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -48424,7 +48424,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -48441,7 +48441,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -48461,7 +48461,7 @@ const allItems = [
                 "Materials"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "EmptyDropper",
@@ -48647,7 +48647,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SharpeningStation",
@@ -48712,7 +48712,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TargetDummy",
@@ -48729,7 +48729,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CorruptFishingCrate",
@@ -48746,7 +48746,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonFishingCrate",
@@ -48763,7 +48763,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DungeonFishingCrate",
@@ -48780,7 +48780,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FloatingIslandFishingCrate",
@@ -48797,7 +48797,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HallowedFishingCrate",
@@ -48814,7 +48814,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "JungleFishingCrate",
@@ -48919,7 +48919,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DayBloomPlanterBox",
@@ -48933,7 +48933,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MoonglowPlanterBox",
@@ -48947,7 +48947,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CorruptPlanterBox",
@@ -48961,7 +48961,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonPlanterBox",
@@ -48975,7 +48975,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlinkrootPlanterBox",
@@ -48989,7 +48989,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WaterleafPlanterBox",
@@ -49003,7 +49003,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ShiverthornPlanterBox",
@@ -49017,7 +49017,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FireBlossomPlanterBox",
@@ -49124,7 +49124,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichGravestone1",
@@ -49138,7 +49138,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichGravestone2",
@@ -49152,7 +49152,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichGravestone3",
@@ -49166,7 +49166,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichGravestone4",
@@ -49180,7 +49180,7 @@ const allItems = [
         neededForResearch: 2,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichGravestone5",
@@ -49282,7 +49282,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Trapdoor",
@@ -49296,7 +49296,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TallGate",
@@ -49501,7 +49501,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CageEnchantedNightcrawler",
@@ -49515,7 +49515,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CageBuggy",
@@ -49529,7 +49529,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CageGrubby",
@@ -49543,7 +49543,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CageSluggy",
@@ -49602,7 +49602,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -49743,7 +49743,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ItemFrame",
@@ -51076,7 +51076,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -51093,7 +51093,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -51110,7 +51110,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -51184,7 +51184,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fireplace",
@@ -51198,7 +51198,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Chimney",
@@ -51260,7 +51260,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -51511,7 +51511,7 @@ const allItems = [
         neededForResearch: 3,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StrangePlant1",
@@ -51525,7 +51525,7 @@ const allItems = [
         neededForResearch: 3,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StrangePlant2",
@@ -51539,7 +51539,7 @@ const allItems = [
         neededForResearch: 3,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StrangePlant3",
@@ -51553,7 +51553,7 @@ const allItems = [
         neededForResearch: 3,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StrangePlant4",
@@ -52747,7 +52747,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -53738,7 +53738,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -53756,7 +53756,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -53774,7 +53774,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -53792,7 +53792,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -53886,7 +53886,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Detonator",
@@ -54187,7 +54187,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SquirrelOrangeCage",
@@ -54201,7 +54201,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SquirrelGoldCage",
@@ -54625,7 +54625,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -54727,7 +54727,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGateLamp_Off",
@@ -54741,7 +54741,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_AND",
@@ -54755,7 +54755,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_OR",
@@ -54769,7 +54769,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_NAND",
@@ -54783,7 +54783,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_NOR",
@@ -54797,7 +54797,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_XOR",
@@ -54811,7 +54811,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGate_NXOR",
@@ -54828,7 +54828,7 @@ const allItems = [
                 "Blocks"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -54848,7 +54848,7 @@ const allItems = [
                 "Blocks"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -54896,7 +54896,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Sun",
@@ -54910,7 +54910,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Moon",
@@ -54924,7 +54924,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Above",
@@ -54938,7 +54938,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WirePipe",
@@ -54952,7 +54952,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AnnouncementBox",
@@ -54967,7 +54967,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGateLamp_On",
@@ -55026,7 +55026,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockRedPlatform",
@@ -55085,7 +55085,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeightedPressurePlatePink",
@@ -55127,7 +55127,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WireBulb",
@@ -55141,7 +55141,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeightedPressurePlateOrange",
@@ -55155,7 +55155,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeightedPressurePlatePurple",
@@ -55169,7 +55169,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeightedPressurePlateCyan",
@@ -55253,7 +55253,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockGreenPlatform",
@@ -55267,7 +55267,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockBluePlatform",
@@ -55281,7 +55281,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockYellowPlatform",
@@ -55295,7 +55295,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockPinkPlatform",
@@ -55309,7 +55309,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeamBlockWhitePlatform",
@@ -55340,7 +55340,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockRuby",
@@ -55354,7 +55354,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockSapphire",
@@ -55368,7 +55368,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockEmerald",
@@ -55382,7 +55382,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockTopaz",
@@ -55396,7 +55396,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockAmethyst",
@@ -55410,7 +55410,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockDiamond",
@@ -55424,7 +55424,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GemLockAmber",
@@ -55607,7 +55607,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicGateLamp_Faulty",
@@ -55621,7 +55621,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PortalGunStation",
@@ -55635,7 +55635,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_Chest",
@@ -55649,7 +55649,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GoldChest",
@@ -55663,7 +55663,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_ShadowChest",
@@ -55677,7 +55677,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_EbonwoodChest",
@@ -55691,7 +55691,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_RichMahoganyChest",
@@ -55705,7 +55705,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -55722,7 +55722,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_IvyChest",
@@ -55736,7 +55736,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_IceChest",
@@ -55750,7 +55750,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_LivingWoodChest",
@@ -55764,7 +55764,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SkywareChest",
@@ -55778,7 +55778,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_ShadewoodChest",
@@ -55792,7 +55792,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_WebCoveredChest",
@@ -55806,7 +55806,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_LihzahrdChest",
@@ -55820,7 +55820,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_WaterChest",
@@ -55834,7 +55834,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_JungleChest",
@@ -55848,7 +55848,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CorruptionChest",
@@ -55862,7 +55862,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CrimsonChest",
@@ -55876,7 +55876,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_HallowedChest",
@@ -55890,7 +55890,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_FrozenChest",
@@ -55904,7 +55904,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_DynastyChest",
@@ -55918,7 +55918,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_HoneyChest",
@@ -55932,7 +55932,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SteampunkChest",
@@ -55946,7 +55946,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_PalmWoodChest",
@@ -55960,7 +55960,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_MushroomChest",
@@ -55974,7 +55974,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -55991,7 +55991,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SlimeChest",
@@ -56005,7 +56005,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GreenDungeonChest",
@@ -56019,7 +56019,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_PinkDungeonChest",
@@ -56033,7 +56033,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_BlueDungeonChest",
@@ -56047,7 +56047,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_BoneChest",
@@ -56061,7 +56061,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CactusChest",
@@ -56075,7 +56075,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_FleshChest",
@@ -56089,7 +56089,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_ObsidianChest",
@@ -56103,7 +56103,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_PumpkinChest",
@@ -56117,7 +56117,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SpookyChest",
@@ -56131,7 +56131,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GlassChest",
@@ -56145,7 +56145,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_MartianChest",
@@ -56159,7 +56159,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_MeteoriteChest",
@@ -56173,7 +56173,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GraniteChest",
@@ -56187,7 +56187,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_MarbleChest",
@@ -56201,7 +56201,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ProjectilePressurePad",
@@ -56414,7 +56414,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GeyserTrap",
@@ -56430,7 +56430,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "UltraBrightCampfire",
@@ -56446,7 +56446,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BoneCampfire",
@@ -56460,7 +56460,7 @@ const allItems = [
         neededForResearch: 25,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PixelBox",
@@ -56474,7 +56474,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Water",
@@ -56488,7 +56488,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Lava",
@@ -56502,7 +56502,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Honey",
@@ -56516,7 +56516,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LogicSensor_Liquid",
@@ -56709,7 +56709,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -56726,7 +56726,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -56743,7 +56743,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -56760,7 +56760,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -56777,7 +56777,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Pigronata",
@@ -56791,7 +56791,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -56808,7 +56808,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PartyBundleOfBalloonTile",
@@ -56822,7 +56822,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PartyPresent",
@@ -56836,7 +56836,7 @@ const allItems = [
         neededForResearch: 3,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SliceOfCake",
@@ -57336,7 +57336,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MagicSandDropper",
@@ -57544,7 +57544,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials",
@@ -57830,7 +57830,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -57864,7 +57864,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DD2ElderCrystalStand",
@@ -58516,7 +58516,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -58533,7 +58533,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -58550,7 +58550,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -58824,7 +58824,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CrystalChest",
@@ -58838,7 +58838,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GoldenChest",
@@ -59102,7 +59102,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -59773,7 +59773,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SpiderChest",
@@ -60171,7 +60171,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_LesionChest",
@@ -60202,7 +60202,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WoodenCrateHard",
@@ -60219,7 +60219,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "IronCrateHard",
@@ -60236,7 +60236,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldenCrateHard",
@@ -60253,7 +60253,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CorruptFishingCrateHard",
@@ -60270,7 +60270,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonFishingCrateHard",
@@ -60287,7 +60287,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DungeonFishingCrateHard",
@@ -60304,7 +60304,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FloatingIslandFishingCrateHard",
@@ -60321,7 +60321,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HallowedFishingCrateHard",
@@ -60338,7 +60338,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "JungleFishingCrateHard",
@@ -61350,7 +61350,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -61478,7 +61478,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -61495,7 +61495,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PicnicTable",
@@ -61509,7 +61509,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PicnicTableWithCloth",
@@ -61602,7 +61602,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -61619,7 +61619,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -61636,7 +61636,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -61653,7 +61653,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -61670,7 +61670,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WeatherVane",
@@ -61824,7 +61824,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagWhite",
@@ -61838,7 +61838,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagRed",
@@ -61852,7 +61852,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagGreen",
@@ -61866,7 +61866,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagBlue",
@@ -61880,7 +61880,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagYellow",
@@ -61894,7 +61894,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfCupFlagPurple",
@@ -61908,7 +61908,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfTee",
@@ -62440,7 +62440,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ToiletDiamond",
@@ -62969,7 +62969,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SolarChest",
@@ -63276,7 +63276,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_VortexChest",
@@ -63586,7 +63586,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_NebulaChest",
@@ -63896,7 +63896,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_StardustChest",
@@ -64403,7 +64403,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -64482,7 +64482,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GolfChest",
@@ -64514,7 +64514,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_DesertChest",
@@ -64627,7 +64627,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Vanity"
@@ -65308,7 +65308,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -65326,7 +65326,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ArrowSign",
@@ -65340,7 +65340,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PaintedArrowSign",
@@ -65427,7 +65427,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FoodPlatter",
@@ -65441,7 +65441,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlackDragonflyJar",
@@ -65455,7 +65455,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueDragonflyJar",
@@ -65469,7 +65469,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenDragonflyJar",
@@ -65483,7 +65483,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OrangeDragonflyJar",
@@ -65497,7 +65497,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RedDragonflyJar",
@@ -65511,7 +65511,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowDragonflyJar",
@@ -65525,7 +65525,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldDragonflyJar",
@@ -66046,7 +66046,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MaggotCage",
@@ -66242,7 +66242,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RatCage",
@@ -66314,7 +66314,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LadybugCage",
@@ -66482,7 +66482,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RollingCactus",
@@ -66572,7 +66572,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OwlCage",
@@ -66600,7 +66600,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PupfishBowl",
@@ -66614,7 +66614,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldLadybugCage",
@@ -66707,7 +66707,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FrozenCrate",
@@ -66724,7 +66724,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "FrozenCrateHard",
@@ -66741,7 +66741,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OasisCrate",
@@ -66758,7 +66758,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OasisCrateHard",
@@ -66887,7 +66887,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OasisFountain",
@@ -66935,7 +66935,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LawnFlamingo",
@@ -67088,7 +67088,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedForestCedar",
@@ -67102,7 +67102,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedJungleCedar",
@@ -67116,7 +67116,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedHallowCedar",
@@ -67130,7 +67130,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedForestTree",
@@ -67144,7 +67144,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedJungleTree",
@@ -67158,7 +67158,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedHallowTree",
@@ -67172,7 +67172,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedForestPalm",
@@ -67186,7 +67186,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedJunglePalm",
@@ -67200,7 +67200,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedHallowPalm",
@@ -67214,7 +67214,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedForestBamboo",
@@ -67228,7 +67228,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedJungleBamboo",
@@ -67242,7 +67242,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedHallowBamboo",
@@ -67540,7 +67540,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TurtleCage",
@@ -67554,7 +67554,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TurtleJungleCage",
@@ -67723,7 +67723,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GrebeCage",
@@ -67737,7 +67737,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SeagullCage",
@@ -67751,7 +67751,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "WaterStriderCage",
@@ -67765,7 +67765,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldWaterStriderCage",
@@ -67838,7 +67838,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SeahorseCage",
@@ -67869,7 +67869,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GoldSeahorseCage",
@@ -67883,7 +67883,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TimerOneHalfSecond",
@@ -67897,7 +67897,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TimerOneFourthSecond",
@@ -69012,7 +69012,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Novelty Items"
@@ -69043,7 +69043,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MarbleColumn",
@@ -69499,7 +69499,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_BambooChest",
@@ -69695,7 +69695,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfTrophyBronze",
@@ -69709,7 +69709,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfTrophySilver",
@@ -69723,7 +69723,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GolfTrophyGold",
@@ -69848,7 +69848,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GardenGnome",
@@ -70540,7 +70540,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PinkFairyJar",
@@ -70554,7 +70554,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GreenFairyJar",
@@ -70568,7 +70568,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueFairyJar",
@@ -70780,10 +70780,10 @@ const allItems = [
             ]
         },
         internalName: "KiteBunnyCrimson",
-        itemUrl: "Crimson_Bunny_Kite",
+        itemUrl: "Vicious_Bunny_Kite",
         id: 4671,
         researched: 0,
-        imageUrl: "Crimson_Bunny_Kite.png"
+        imageUrl: "Vicious_Bunny_Kite.png"
     },
     {
         name: "Leather Whip",
@@ -71045,7 +71045,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DesertCampfire",
@@ -71061,7 +71061,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CoralCampfire",
@@ -71077,7 +71077,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CorruptCampfire",
@@ -71093,7 +71093,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonCampfire",
@@ -71109,7 +71109,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HallowedCampfire",
@@ -71125,7 +71125,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "JungleCampfire",
@@ -71352,7 +71352,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TatteredWoodSign",
@@ -71397,7 +71397,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_DungeonDesertChest",
@@ -71456,7 +71456,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BorealBeam",
@@ -71470,7 +71470,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RichMahoganyBeam",
@@ -71484,7 +71484,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GraniteColumn",
@@ -71498,7 +71498,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SandstoneColumn",
@@ -71512,7 +71512,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MushroomBeam",
@@ -71638,7 +71638,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -72405,7 +72405,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -73450,7 +73450,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "HellButterflyJar",
@@ -73512,7 +73512,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MagmaSnailCage",
@@ -73624,7 +73624,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -73641,7 +73641,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedDaybloom",
@@ -73655,7 +73655,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedMoonglow",
@@ -73669,7 +73669,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedWaterleaf",
@@ -73683,7 +73683,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedShiverthorn",
@@ -73697,7 +73697,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedBlinkroot",
@@ -73711,7 +73711,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedDeathweedCorrupt",
@@ -73725,7 +73725,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedDeathweedCrimson",
@@ -73739,7 +73739,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PotSuspendedFireblossom",
@@ -73767,7 +73767,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -73784,7 +73784,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "VolcanoLarge",
@@ -73871,7 +73871,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonJungle",
@@ -73885,7 +73885,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonPurity",
@@ -73902,7 +73902,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LavaCrate",
@@ -73919,7 +73919,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LavaCrateHard",
@@ -73947,7 +73947,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LavaFishbowl",
@@ -73978,7 +73978,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AmethystBunnyCage",
@@ -73992,7 +73992,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TopazBunnyCage",
@@ -74006,7 +74006,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SapphireBunnyCage",
@@ -74020,7 +74020,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "EmeraldBunnyCage",
@@ -74034,7 +74034,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RubyBunnyCage",
@@ -74048,7 +74048,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DiamondBunnyCage",
@@ -74062,7 +74062,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AmberBunnyCage",
@@ -74076,7 +74076,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AmethystSquirrelCage",
@@ -74090,7 +74090,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TopazSquirrelCage",
@@ -74104,7 +74104,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SapphireSquirrelCage",
@@ -74118,7 +74118,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "EmeraldSquirrelCage",
@@ -74132,7 +74132,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RubySquirrelCage",
@@ -74146,7 +74146,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DiamondSquirrelCage",
@@ -74160,7 +74160,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AmberSquirrelCage",
@@ -74258,7 +74258,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedLavaPlantPalm",
@@ -74272,7 +74272,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedLavaPlantBush",
@@ -74286,7 +74286,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedLavaPlantBramble",
@@ -74300,7 +74300,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedLavaPlantBulb",
@@ -74314,7 +74314,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedLavaPlantTendrils",
@@ -74469,7 +74469,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonHallow",
@@ -74483,7 +74483,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonUnderground",
@@ -74497,7 +74497,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonOcean",
@@ -74511,7 +74511,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonDesert",
@@ -74525,7 +74525,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonSnow",
@@ -74539,7 +74539,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonMushroom",
@@ -74553,7 +74553,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CavernFountain",
@@ -74584,7 +74584,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74601,7 +74601,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74618,7 +74618,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74635,7 +74635,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74652,7 +74652,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74669,7 +74669,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74686,7 +74686,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74703,7 +74703,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74720,7 +74720,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74737,7 +74737,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74754,7 +74754,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74771,7 +74771,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74788,7 +74788,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74805,7 +74805,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74822,7 +74822,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74839,7 +74839,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74856,7 +74856,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74873,7 +74873,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74890,7 +74890,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PumpkingMasterTrophy",
@@ -74904,7 +74904,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74921,7 +74921,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74938,7 +74938,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74955,7 +74955,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74972,7 +74972,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -74989,7 +74989,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -75006,7 +75006,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -75023,7 +75023,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -75040,7 +75040,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonVictory",
@@ -75147,7 +75147,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -75230,7 +75230,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TruffleWormCage",
@@ -75244,7 +75244,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "EmpressButterflyJar",
@@ -75746,7 +75746,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -75881,7 +75881,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OceanCrate",
@@ -75898,7 +75898,7 @@ const allItems = [
                 "Grab Bags"
             ],
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "OceanCrateHard",
@@ -76906,7 +76906,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BeeHive",
@@ -76920,7 +76920,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "AntlionEggs",
@@ -77123,7 +77123,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedCrystalPlantFern",
@@ -77137,7 +77137,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedCrystalPlantSpiral",
@@ -77151,7 +77151,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedCrystalPlantTeardrop",
@@ -77165,7 +77165,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PottedCrystalPlantTree",
@@ -77528,7 +77528,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -77562,7 +77562,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Drops"
@@ -77611,7 +77611,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -77927,7 +77927,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StinkbugCage",
@@ -77986,7 +77986,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StinkbugHousingBlocker",
@@ -78000,7 +78000,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "StinkbugHousingBlockerEcho",
@@ -78428,7 +78428,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CoralChest",
@@ -78735,7 +78735,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_BalloonChest",
@@ -79045,7 +79045,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_AshWoodChest",
@@ -79104,7 +79104,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ScarletMacawCage",
@@ -80165,7 +80165,7 @@ const allItems = [
         neededForResearch: 10,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RepairedLifeCrystal",
@@ -80179,7 +80179,7 @@ const allItems = [
         neededForResearch: 10,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RepairedManaCrystal",
@@ -80255,7 +80255,7 @@ const allItems = [
         neededForResearch: 200,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -80358,7 +80358,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "MushroomCampfire",
@@ -80389,7 +80389,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BlueMacawCage",
@@ -80592,7 +80592,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ToucanCage",
@@ -80606,7 +80606,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "YellowCockatielCage",
@@ -80620,7 +80620,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "GrayCockatielCage",
@@ -80676,7 +80676,7 @@ const allItems = [
         neededForResearch: 30,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PlaceableHealingPotion",
@@ -80690,7 +80690,7 @@ const allItems = [
         neededForResearch: 30,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PlaceableManaPotion",
@@ -80705,7 +80705,7 @@ const allItems = [
         tags: {
             "Furniture": [
                 "Light Sources",
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -80778,7 +80778,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TNTBarrel",
@@ -81063,7 +81063,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -81098,7 +81098,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Shimmering"
@@ -81269,7 +81269,7 @@ const allItems = [
             "Furniture": [
                 "Crafting Stations",
                 "Light Sources",
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Shimmering"
@@ -81654,7 +81654,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Shimmering"
@@ -81689,7 +81689,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "BouncyBoulder",
@@ -81703,7 +81703,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LifeCrystalBoulder",
@@ -83052,7 +83052,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DemonAltarReplica",
@@ -83066,7 +83066,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonAltarReplica",
@@ -83080,7 +83080,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "ShadowOrbReplica",
@@ -83094,7 +83094,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "CrimsonHeartReplica",
@@ -83108,7 +83108,7 @@ const allItems = [
         neededForResearch: 50,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Materials"
@@ -83125,7 +83125,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "DeadCellsDisplayJar",
@@ -83410,7 +83410,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Shimmering"
@@ -83717,7 +83717,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "PufferfishCage",
@@ -83745,7 +83745,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "RainbowBoulder",
@@ -83776,7 +83776,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Poulder",
@@ -83841,7 +83841,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "LavaBoulder",
@@ -83855,7 +83855,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "SpiderBoulder",
@@ -83869,7 +83869,7 @@ const allItems = [
         neededForResearch: 5,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Ghoulder",
@@ -84548,7 +84548,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_AetheriumChest",
@@ -85018,7 +85018,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -85036,7 +85036,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -85350,7 +85350,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_FallenStarChest",
@@ -85703,7 +85703,7 @@ const allItems = [
         itemUrl: "Rainbow_Glowstick",
         id: 5643,
         researched: 0,
-        imageUrl: "Rainbow_Glowstick.png"
+        imageUrl: "Rainbow_Glowstick.gif"
     },
     {
         name: "Scrying Orb",
@@ -85825,7 +85825,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "TeleportationPylonUnderworld",
@@ -85839,7 +85839,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Misc": [
                 "Shimmering"
@@ -85873,7 +85873,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ],
             "Equipment": [
                 "Accessories",
@@ -85990,6 +85990,9 @@ const allItems = [
         tags: {
             "Weapons": [
                 "Summon Weapons"
+            ],
+            "Misc": [
+                "Materials"
             ]
         },
         internalName: "PalworldMinionCattiva",
@@ -86004,6 +86007,9 @@ const allItems = [
         tags: {
             "Weapons": [
                 "Summon Weapons"
+            ],
+            "Misc": [
+                "Materials"
             ]
         },
         internalName: "PalworldMinionFoxsparks",
@@ -86018,6 +86024,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Mounts"
+            ],
+            "Misc": [
+                "Materials"
             ]
         },
         internalName: "PalworldPetChillet",
@@ -86032,6 +86041,9 @@ const allItems = [
         tags: {
             "Equipment": [
                 "Mounts"
+            ],
+            "Misc": [
+                "Materials"
             ]
         },
         internalName: "PalworldPetChilletIgnis",
@@ -86046,6 +86058,9 @@ const allItems = [
         tags: {
             "Tools": [
                 "Other Tools"
+            ],
+            "Misc": [
+                "Materials"
             ]
         },
         internalName: "PalworldDigtoise",
@@ -86665,7 +86680,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_FeywoodChest",
@@ -87006,7 +87021,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_HallowedFurnitureChest",
@@ -87278,7 +87293,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_GothicChest",
@@ -87622,7 +87637,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_DemoniteChest",
@@ -87932,7 +87947,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CrimtaneChest",
@@ -88242,7 +88257,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SnowChest",
@@ -88552,7 +88567,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_FlinxFurChest",
@@ -88854,7 +88869,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_PineChest",
@@ -89192,7 +89207,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_EasterChest",
@@ -89502,7 +89517,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_StoneChest",
@@ -89812,7 +89827,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_JellyfishChest",
@@ -90215,7 +90230,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_HarpyChest",
@@ -90542,7 +90557,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_CloudChest",
@@ -90852,7 +90867,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_MoonplateChest",
@@ -91194,7 +91209,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_LibrarianChest",
@@ -91538,7 +91553,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_SpikeChest",
@@ -91882,7 +91897,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_OfficeChest",
@@ -92226,7 +92241,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_ForbiddenChest",
@@ -92882,7 +92897,7 @@ const allItems = [
         neededForResearch: 1,
         tags: {
             "Furniture": [
-                "Other Items"
+                "Other"
             ]
         },
         internalName: "Fake_BoulderChest",
@@ -93133,11 +93148,679 @@ const allItems = [
         researched: 0,
         imageUrl: "Music_Box_(Silence).png"
     },
-
-
-
-
-
+    {
+        name: "Giant Tiki",
+        neededForResearch: 1,
+        tags: {
+            "Furniture": [
+                "Other"
+            ]
+        },
+        internalName: "GiantTiki",
+        itemUrl: "Giant_Tiki",
+        id: 6147,
+        researched: 0,
+        imageUrl: "Giant_Tiki.png"
+    },
+    {
+        name: "Trusty Cattiva",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Mounts"
+            ]
+        },
+        internalName: "PalworldMinionTrustyCattiva",
+        itemUrl: "Trusty_Cattiva",
+        id: 6148,
+        researched: 0,
+        imageUrl: "Cattiva.png"
+    },
+    {
+        name: "Trusty Foxparks",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Mounts"
+            ]
+        },
+        internalName: "PalworldMinionTrustyFoxsparks",
+        itemUrl: "Trusty_Foxparks",
+        id: 6149,
+        researched: 0,
+        imageUrl: "Foxparks.png"
+    },
+    {
+        name: "Trusty Chillet",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Mounts"
+            ]
+        },
+        internalName: "PalworldMountTrustyChillet",
+        itemUrl: "Trusty_Chillet",
+        id: 6150,
+        researched: 0,
+        imageUrl: "Chillet.png"
+    },
+    {
+        name: "Trusty Chillet Ignis",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Mounts"
+            ]
+        },
+        internalName: "PalworldMountTrustyChilletIgnis",
+        itemUrl: "Trusty_Chillet_Ignis",
+        id: 6151,
+        researched: 0,
+        imageUrl: "Chillet_Ignis.png"
+    },
+    {
+        name: "Daybloom Staff",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Magic Weapons"
+            ]
+        },
+        internalName: "DaybloomStaff",
+        itemUrl: "Daybloom_Staff",
+        id: 6152,
+        researched: 0,
+        imageUrl: "Daybloom_Staff.png"
+    },
+    {
+        name: "Glacier Fang",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Magic Weapons"
+            ]
+        },
+        internalName: "GlacierFang",
+        itemUrl: "Glacier_Fang",
+        id: 6153,
+        researched: 0,
+        imageUrl: "Glacier_Fang.png"
+    },
+    {
+        name: "Mystic Bloom",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Magic Weapons"
+            ]
+        },
+        internalName: "Petalstorm",
+        itemUrl: "Mystic_Bloom",
+        id: 6154,
+        researched: 0,
+        imageUrl: "Mystic_Bloom.png"
+    },
+    {
+        name: "Lightning Strike",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Magic Weapons"
+            ]
+        },
+        internalName: "LightningStrike",
+        itemUrl: "Lightning_Strike",
+        id: 6155,
+        researched: 0,
+        imageUrl: "Lightning_Strike.png"
+    },
+    {
+        name: "Silver Bracer",
+        neededForResearch: 1,
+        tags: {
+            "Equpment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "SilverBracer",
+        itemUrl: "Silver_Bracer",
+        id: 6156,
+        researched: 0,
+        imageUrl: "Silver_Bracer.png"
+    },
+    {
+        name: "Snake Band",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "SnakeBand",
+        itemUrl: "Snake_Band",
+        id: 6157,
+        researched: 0,
+        imageUrl: "Snake_Band.png"
+    },
+    {
+        name: "Mobius Strip",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "MobiusStrip",
+        itemUrl: "Mobius_Strip",
+        id: 6158,
+        researched: 0,
+        imageUrl: "Mobius_Strip.png"
+    },
+    {
+        name: "Wicked Armlet",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "WickedArmlet",
+        itemUrl: "Wicked_Armlet",
+        id: 6159,
+        researched: 0,
+        imageUrl: "Wicked_Armlet.png"
+    },
+    {
+        name: "Clay Bud Staff",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Summon Weapons"
+            ]
+        },
+        internalName: "ClayPotMinion",
+        itemUrl: "Clay_Bud_Staff",
+        id: 6161,
+        researched: 0,
+        imageUrl: "Clay_Bud_Staff.png"
+    },
+    {
+        name: "Ouroboros Ring",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "OuroborosRing",
+        itemUrl: "Ouroboros_Ring",
+        id: 6162,
+        researched: 0,
+        imageUrl: "Ouroboros_Ring.png"
+    },
+    {
+        name: "Twilight Grasp",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "TwilightGrasp",
+        itemUrl: "Twilight_Grasp",
+        id: 6163,
+        researched: 0,
+        imageUrl: "Twilight_Grasp.png"
+    },
+    {
+        name: "Ruinous Staff",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Summon Weapons"
+            ]
+        },
+        internalName: "ForbiddenMinion",
+        itemUrl: "Ruinous_Staff",
+        id: 6164,
+        researched: 0,
+        imageUrl: "Ruinous_Staff.png"
+    },
+    {
+        name: "Poison Barb",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "PoisonBarb",
+        itemUrl: "Poison_Barb",
+        id: 6165,
+        researched: 0,
+        imageUrl: "Poison_Barb.png"
+    },
+    {
+        name: "Harpy Charm",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "HarpyCharm",
+        itemUrl: "Harpy_Charm",
+        id: 6166,
+        researched: 0,
+        imageUrl: "Harpy_Charm.png"
+    },
+    {
+        name: "Snapping Stone",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Drops",
+                "Materials"
+            ]
+        },
+        internalName: "SnappingStone",
+        itemUrl: "Snapping_Stone",
+        id: 6167,
+        researched: 0,
+        imageUrl: "Snapping_Stone.png"
+    },
+    {
+        name: "Chaos Cylinder",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "AmmoCycler4",
+        itemUrl: "Chaos_Cylinder",
+        id: 6168,
+        researched: 0,
+        imageUrl: "Chaos_Cylinder.png"
+    },
+    {
+        name: "Chaos Cylinder (Full)",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "AmmoCyclerFullInv",
+        itemUrl: "Chaos_Cylinder_%28Full%29",
+        id: 6169,
+        researched: 0,
+        imageUrl: "Chaos_Cylinder_%28Full%29.png"
+    },
+    {
+        name: "Heavy Sling",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ],
+            "Misc": [
+                "Drops",
+                "Materials"
+            ]
+        },
+        internalName: "HeavySling",
+        itemUrl: "Heavy_Sling",
+        id: 6172,
+        researched: 0,
+        imageUrl: "Heavy_Sling.png"
+    },
+    {
+        name: "Arc Surge",
+        neededForResearch: 1,
+        tags: {
+            "Weapons": [
+                "Magic Weapons"
+            ],
+            "Misc": [
+                "Drops"
+            ]
+        },
+        internalName: "ArcSurge",
+        itemUrl: "Arc_Surge",
+        id: 6173,
+        researched: 0,
+        imageUrl: "Arc_Surge.png"
+    },
+    {
+        name: "Trusty Digtoise",
+        neededForResearch: 1,
+        tags: {
+            "Tools": [
+                "Other Tools"
+            ]
+        },
+        internalName: "PalworldTrustyDigtoise",
+        itemUrl: "Trusty_Digtoise",
+        id: 6174,
+        researched: 0,
+        imageUrl: "Digtoise.png"
+    },
+    {
+        name: "Scout's Sling",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "ScoutSling",
+        itemUrl: "Scout%27s_Sling",
+        id: 6175,
+        researched: 0,
+        imageUrl: "Scout%27s_Sling.png"
+    },
+    {
+        name: "Templar's Sling",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "TemplarSling",
+        itemUrl: "Templar%27s_Sling",
+        id: 6176,
+        researched: 0,
+        imageUrl: "Templar%27s_Sling.png"
+    },
+    {
+        name: "Royal Guard's Harness",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "RoyalGuardHarness",
+        itemUrl: "Royal_Guard%27s_Harness",
+        id: 6177,
+        researched: 0,
+        imageUrl: "Royal_Guard%27s_Harness.png"
+    },
+    {
+        name: "Pyroclastic Stone",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "Pyroclast",
+        itemUrl: "Pyroclastic_Stone",
+        id: 6178,
+        researched: 0,
+        imageUrl: "Pyroclastic_Stone.png"
+    },
+    {
+        name: "Armlet Of Ruin",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "ArmletOfRuin",
+        itemUrl: "Armlet_Of_Ruin",
+        id: 6179,
+        researched: 0,
+        imageUrl: "Armlet_Of_Ruin.png"
+    },
+    {
+        name: "Seraph Necklace",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "SeraphNecklace",
+        itemUrl: "Seraph_Necklace",
+        id: 6180,
+        researched: 0,
+        imageUrl: "Seraph_Necklace.png"
+    },
+    {
+        name: "Phoenix Quiver",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "PhoenixQuiver",
+        itemUrl: "Phoenix_Quiver",
+        id: 6181,
+        researched: 0,
+        imageUrl: "Phoenix_Quiver.png"
+    },
+    {
+        name: "Wicked Claws",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "WickedClaws",
+        itemUrl: "Wicked_Claws",
+        id: 6182,
+        researched: 0,
+        imageUrl: "Wicked_Claws.png"
+    },
+    {
+        name: "Silver Shield",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "SilverShield",
+        itemUrl: "Silver_Shield",
+        id: 6183,
+        researched: 0,
+        imageUrl: "Silver_Shield.png"
+    },
+    {
+        name: "Sweet Barb",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "SweetBarb",
+        itemUrl: "Sweet_Barb",
+        id: 6184,
+        researched: 0,
+        imageUrl: "Sweet_Barb.png"
+    },
+    {
+        name: "Catalyst Band",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "CatalystBand",
+        itemUrl: "Catalyst_Band",
+        id: 6185,
+        researched: 0,
+        imageUrl: "Catalyst_Band.png"
+    },
+    {
+        name: "Druidic Serpent Cloak",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "DruidicSerpentCloak",
+        itemUrl: "Druidic_Serpent_Cloak",
+        id: 6186,
+        researched: 0,
+        imageUrl: "Druidic_Serpent_Cloak.png"
+    },
+    {
+        name: "Crossed Heart Necklace",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "CrossedHeartNecklace",
+        itemUrl: "Crossed_Heart_Necklace",
+        id: 6187,
+        researched: 0,
+        imageUrl: "Crossed_Heart_Necklace.png"
+    },
+    {
+        name: "Restoration Shield",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "RestorationShield",
+        itemUrl: "Restoration_Shield",
+        id: 6188,
+        researched: 0,
+        imageUrl: "Restoration_Shield.png"
+    },
+    {
+        name: "Mystic Arts Sash",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "MysticArtsSash",
+        itemUrl: "Mystic_Arts_Sash",
+        id: 6189,
+        researched: 0,
+        imageUrl: "Mystic_Arts_Sash.png"
+    },
+    {
+        name: "Guide to Old World Parkour",
+        neededForResearch: 1,
+        tags: {
+            "Tools": [
+                "Other"
+            ]
+        },
+        internalName: "OldStyleParkourBook",
+        itemUrl: "Guide_to_Old_World_Parkour",
+        id: 6190,
+        researched: 0,
+        imageUrl: "Guide_to_Old_World_Parkour.png"
+    },
+    {
+        name: "Little Kinship Peach",
+        neededForResearch: 10,
+        tags: {
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "PalworldLittleKinshipPeach",
+        itemUrl: "Little_Kinship_Peach",
+        id: 6191,
+        researched: 0,
+        imageUrl: "Little_Kinship_Peach.png"
+    },
+    {
+        name: "Kinship Peach",
+        neededForResearch: 10,
+        tags: {
+            "Misc": [
+                "Materials"
+            ]
+        },
+        internalName: "PalworldKinshipPeach",
+        itemUrl: "Kinship_Peach",
+        id: 6192,
+        researched: 0,
+        imageUrl: "Kinship_Peach.png"
+    },
+    {
+        name: "Chaos Cylinder (Random)",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "AmmoCyclerRandom",
+        itemUrl: "Chaos_Cylinder_%28Random%29",
+        id: 6193,
+        researched: 0,
+        imageUrl: "Chaos_Cylinder_%28Random%29.png"
+    },
+    {
+        name: "Chaos Cylinder (Simple)",
+        neededForResearch: 1,
+        tags: {
+            "Equipment": [
+                "Accessories"
+            ]
+        },
+        internalName: "AmmoCyclerNoCycle",
+        itemUrl: "Chaos_Cylinder_%28Simple%29",
+        id: 6194,
+        researched: 0,
+        imageUrl: "Chaos_Cylinder_%28Simple%29.png"
+    },
+    {
+        name: "Guide to Old World Parkour (Inactive)",
+        neededForResearch: 1,
+        tags: {
+            "Tools": [
+                "Other"
+            ]
+        },
+        internalName: "OldStyleParkourBookInactive",
+        itemUrl: "Guide_to_Old_World_Parkour_%28Inactive%29",
+        id: 6195,
+        researched: 0,
+        imageUrl: "Guide_to_Old_World_Parkour_%28Inactive%29.png"
+    },
 
 
 
@@ -93837,8 +94520,8 @@ const allItems = [
         imageUrl: "Crimson_Altar_%28icon%29.png"
     },
     {
-        name: "Foxparks Tag Effect",
-        internalName: "FoxparksTagEffect",
+        name: "Deprecated6143",
+        internalName: "Deprecated6143",
         id: 6143,
         researched: 0,
         neededForResearch: 0,
@@ -93846,8 +94529,43 @@ const allItems = [
         isUnobtainable: true,
         itemUrl: "Foxparks",
         imageUrl: "Foxparks.png"
-    }
+    },
+    {
+        name: "Razortip",
+        internalName: "SharpBarb",
+        id: 6160,
+        researched: 0,
+        neededForResearch: 1,
+        tags: { "Unobtainable": [] },
+        isUnobtainable: true,
+        itemUrl: "Razortip",
+        imageUrl: "Razortip.png"
+    },
+    {
+        name: "Enchanted Timer",
+        internalName: "TimerCrit",
+        id: 6170,
+        researched: 0,
+        neededForResearch: 1,
+        tags: { "Unobtainable": [] },
+        isUnobtainable: true,
+        itemUrl: "Enchanted_Timer",
+        imageUrl: "Enchanted_Timer.png"
+    },
+    {
+        name: "Bejewejed Staff",
+        internalName: "BejeweledStaff",
+        id: 6171,
+        researched: 0,
+        neededForResearch: 1,
+        tags: { "Unobtainable": [] },
+        isUnobtainable: true,
+        itemUrl: "Bejeweled_Staff",
+        imageUrl: "Bejeweled_Staff.png"
+    },
 ];
+
+const allItemsCount = 6196;
 
 const allTags = {
     "Weapons": [
@@ -93900,7 +94618,7 @@ const allTags = {
         "Banners",
         "Statues",
         "Music Boxes",
-        "Other Items"
+        "Other"
     ],
     "Tiles": [
         "Blocks",

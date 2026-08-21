@@ -97,4 +97,18 @@ class BinaryReader {
             b.toString(16).padStart(2, "0")
         )
     }
+
+    readByteBits() {
+        const byte = this.readByte();
+        return [
+            byte & 128,
+            byte & 64,
+            byte & 32,
+            byte & 16,
+            byte & 8,
+            byte & 4,
+            byte & 2,
+            byte & 1
+        ];
+    }
 }

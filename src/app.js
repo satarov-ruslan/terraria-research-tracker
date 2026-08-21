@@ -263,6 +263,7 @@ confirmResetButton.addEventListener("click", () => {
     playerNameLabel.textContent = "no name";
     searchQuery = "";
     searchInput.value = "";
+    pageSizeDropdownToggleLabel.innerText = viewSettings.pageSizeLabel;
     currentPage = 1;
     updateSearchResetVisibility();
 
