@@ -75,7 +75,7 @@ const FILE_PICKER_OPTIONS = {
         {
             description: "Player File",
             accept: {
-                "application/octet-stream": [".plr", ".plr.bak"],
+                "application/terraria-player-file": [".plr", ".plr.bak"],
             },
         },
     ],
@@ -98,6 +98,10 @@ const settingsStorageManager = new LocalStorageManager("terraria-settings", {
     pageSizeLabel: "50",
     sortBy: "ID",
     dataLoadedFromPlayerFile: false,
+    showFullyResearched: false,
+    showPartiallyResearched: true,
+    showNotResearched: true,
+    showUnobtainable: false,
 });
 
 const viewSettings = settingsStorageManager.load();
@@ -115,11 +119,6 @@ if (viewSettings.dataLoadedFromPlayerFile === undefined) {
 let currentPage = 1;
 
 let searchQuery = "";
-
-let showFullyResearched = false;
-let showPartiallyResearched = true;
-let showNotResearched = true;
-let showUnobtainable = false;
 
 let items = itemStorageManager.load();
 
@@ -156,13 +155,13 @@ groupByCategoriesButton.classList.toggle("active", viewSettings.groupByCategorie
 updateScrollToTopVisibility();
 
 viewStyleDropdownToggleLabel.innerText = viewSettings.viewStyle.charAt(0).toUpperCase() + viewSettings.viewStyle.slice(1);
-pageSizeDropdownToggleLabel.innerText = viewSettings.pageSizeLabel;
-sortByDropdownToggleLabel.innerText = viewSettings.sortBy;
+pageSizeDropdownToggleLabel.innerText = viewSettings.pageSizeLabel !== undefined ? viewSettings.pageSizeLabel : "50";
+sortByDropdownToggleLabel.innerText = viewSettings.sortBy !== undefined ? viewSettings.sortBy : "ID";
 
-fullyResearchedCheckbox.checked = showFullyResearched;
-partiallyResearchedCheckbox.checked = showPartiallyResearched;
-notResearchedCheckbox.checked = showNotResearched;
-unobtainableCheckbox.checked = showUnobtainable;
+fullyResearchedCheckbox.checked = viewSettings.showFullyResearched !== undefined ? viewSettings.showFullyResearched : false;
+partiallyResearchedCheckbox.checked = viewSettings.showPartiallyResearched !== undefined ? viewSettings.showPartiallyResearched : true;
+notResearchedCheckbox.checked = viewSettings.showNotResearched !== undefined ? viewSettings.showNotResearched : true;
+unobtainableCheckbox.checked = viewSettings.showUnobtainable !== undefined ? viewSettings.showUnobtainable : false;
 
 renderTags();
 renderSummary();
@@ -267,14 +266,14 @@ confirmResetButton.addEventListener("click", () => {
     currentPage = 1;
     updateSearchResetVisibility();
 
-    showFullyResearched = false;
-    fullyResearchedCheckbox.checked = false;
-    showPartiallyResearched = true;
-    partiallyResearchedCheckbox.checked = true;
-    showNotResearched = true;
-    notResearchedCheckbox.checked = true;
-    showUnobtainable = false;
-    unobtainableCheckbox.checked = false;
+    viewSettings.showFullyResearched = false;
+    fullyResearchedCheckbox.checked = viewSettings.showFullyResearched;
+    viewSettings.showPartiallyResearched = true;
+    partiallyResearchedCheckbox.checked = viewSettings.showPartiallyResearched;
+    viewSettings.showNotResearched = true;
+    notResearchedCheckbox.checked = viewSettings.showNotResearched;
+    viewSettings.showUnobtainable = false;
+    unobtainableCheckbox.checked = viewSettings.showUnobtainable;
 
     itemSection.classList.toggle("grid", viewSettings.viewStyle === "grid");
     itemSection.classList.toggle("list", viewSettings.viewStyle === "list");
@@ -396,25 +395,29 @@ document.addEventListener("click", (e) => {
 });
 
 fullyResearchedCheckbox.addEventListener("change", (e) => {
-    showFullyResearched = e.target.checked;
+    viewSettings.showFullyResearched = e.target.checked;
+    settingsStorageManager.save(viewSettings);
     currentPage = 1;
     render();
 });
 
 partiallyResearchedCheckbox.addEventListener("change", (e) => {
-    showPartiallyResearched = e.target.checked;
+    viewSettings.showPartiallyResearched = e.target.checked;
+    settingsStorageManager.save(viewSettings);
     currentPage = 1;
     render();
 });
 
 notResearchedCheckbox.addEventListener("change", (e) => {
-    showNotResearched = e.target.checked;
+    viewSettings.showNotResearched = e.target.checked;
+    settingsStorageManager.save(viewSettings);
     currentPage = 1;
     render();
 });
 
 unobtainableCheckbox.addEventListener("change", (e) => {
-    showUnobtainable = e.target.checked;
+    viewSettings.showUnobtainable = e.target.checked;
+    settingsStorageManager.save(viewSettings);
     currentPage = 1;
     updateTagFiltersFromUI();
 });
@@ -1023,10 +1026,10 @@ function filterVisibleItems() {
         });
     }
 
-    const fullyResearchedFilter = (item) => showFullyResearched && !item.isUnobtainable && (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp));
-    const partiallyResearchedFilter = (item) => showPartiallyResearched && !item.isUnobtainable && (item.researched > 0 && !(item.fullyResearched || item.fullyResearchedTemp));
-    const notResearchedFilter = (item) => showNotResearched && !item.isUnobtainable && (item.notResearchedTemp || (item.researched == 0 && !item.fullyResearchedTemp));
-    const unobtainableFilter = (item) => showUnobtainable && item.isUnobtainable;
+    const fullyResearchedFilter = (item) => viewSettings.showFullyResearched && !item.isUnobtainable && (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp));
+    const partiallyResearchedFilter = (item) => viewSettings.showPartiallyResearched && !item.isUnobtainable && (item.researched > 0 && !(item.fullyResearched || item.fullyResearchedTemp));
+    const notResearchedFilter = (item) => viewSettings.showNotResearched && !item.isUnobtainable && (item.notResearchedTemp || (item.researched == 0 && !item.fullyResearchedTemp));
+    const unobtainableFilter = (item) => viewSettings.showUnobtainable && item.isUnobtainable;
 
     newVisibleItems = newVisibleItems.filter(item =>
         fullyResearchedFilter(item)
@@ -1063,10 +1066,10 @@ function itemMatchesVisibilityFilters(item) {
         if (!passesTagFilter) return false;
     }
 
-    const fullyResearchedFilter = (item) => showFullyResearched && !item.isUnobtainable && (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp));
-    const partiallyResearchedFilter = (item) => showPartiallyResearched && !item.isUnobtainable && (item.researched > 0 && !(item.fullyResearched || item.fullyResearchedTemp));
-    const notResearchedFilter = (item) => showNotResearched && !item.isUnobtainable && (item.notResearchedTemp || (item.researched == 0 && !item.fullyResearchedTemp));
-    const unobtainableFilter = (item) => showUnobtainable && item.isUnobtainable;
+    const fullyResearchedFilter = (item) => viewSettings.showFullyResearched && !item.isUnobtainable && (item.fullyResearchedTemp || (item.fullyResearched && !item.notResearchedTemp));
+    const partiallyResearchedFilter = (item) => viewSettings.showPartiallyResearched && !item.isUnobtainable && (item.researched > 0 && !(item.fullyResearched || item.fullyResearchedTemp));
+    const notResearchedFilter = (item) => viewSettings.showNotResearched && !item.isUnobtainable && (item.notResearchedTemp || (item.researched == 0 && !item.fullyResearchedTemp));
+    const unobtainableFilter = (item) => viewSettings.showUnobtainable && item.isUnobtainable;
 
     const passesResearchFilters =
         fullyResearchedFilter(item) ||

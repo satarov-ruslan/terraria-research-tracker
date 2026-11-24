@@ -1,10 +1,15 @@
+@font-face {
+    font-family: "Noto Sans Mono";
+    src: url("./fonts/NotoSansMono-Regular.ttf") format("truetype");
+}
+
 body {
     background: #1c1f2e;
 }
 
 .container {
     margin: 40px auto;
-    font-family: "Courier New", monospace;
+    font-family: "Noto Sans Mono", monospace;
     color: #e6e6e6;
 }
 

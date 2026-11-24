@@ -503,8 +503,6 @@ class PlayerDeserializer {
 
         const allItemsCopy = structuredClone(allItems);
 
-        let processedCount = 0;
-
         const unknownItems = [];
 
         for (let index = 0; index < researchedItems; ++index) {
